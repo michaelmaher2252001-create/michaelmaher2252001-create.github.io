@@ -5,8 +5,8 @@ export const siteConfig = {
   accentColor: "#1d4ed8",
 
   social: {
-    email: "your-email@example.com",
-    linkedin: "https://www.linkedin.com/in/your-linkedin",
+    email: "michael.maher2252001@gmail.com",
+    linkedin: "https://www.linkedin.com/in/michael-maher-3104ab216",
     github: "https://github.com/michaelmaher2252001-create"
   },
 
@@ -29,21 +29,25 @@ export const siteConfig = {
       description:
         "Power BI dashboard analyzing global sales, COGS, profit, and trends to support management decision making.",
       link: "https://github.com/michaelmaher2252001-create/global-financial-performance-analysis",
-      skills: ["Power BI", "Financial Analysis", "DAX"]
+      skills: ["Power BI", "Financial Analysis", "DAX"],
+      image: "/projects/global-financial-overview.png"
     },
     {
       name: "Financial Performance & Sales vs Target",
       description:
         "Sales performance analysis versus targets with variance analysis and trend insights.",
       link: "https://github.com/michaelmaher2252001-create/financial-performance-sales-analysis",
-      skills: ["Power BI", "Data Analysis", "Excel"]
+      skills: ["Power BI", "Data Analysis", "Excel"],
+      image: "/projects/sales-vs-target.png"
     },
     {
       name: "Fraud & Financial Transactions Analysis",
       description:
         "Fraud detection and financial risk analysis using transaction data and KPIs.",
       link: "https://github.com/michaelmaher2252001-create/fraud-analysis",
-      skills: ["Power BI", "Risk Analysis", "Data Analysis"]
+      skills: ["Power BI", "Risk Analysis", "Data Analysis"],
+      image: "/projects/fraud-analysis.png"
     }
   ]
 };
+``
