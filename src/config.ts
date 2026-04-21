@@ -27,27 +27,10 @@ export const siteConfig = {
     {
       name: "Global Financial Performance Analysis",
       description:
-        "Executive-level Power BI dashboard designed to help management monitor global sales, control costs, and improve profitability. The dashboard highlights revenue, COGS, and profit trends across regions to identify high-margin markets and support strategic financial decisions.",
+        "Executive-level Power BI dashboard designed to help management monitor global sales, control costs, and improve profitability. The dashboard highlights revenue, COGS, and profit trends to identify high-margin areas and support strategic financial decisions.",
       link: "https://github.com/michaelmaher2252001-create/global-financial-performance-analysis",
       skills: ["Power BI", "Financial Analysis", "DAX"],
       image: "/projects/global-financial-overview.png"
-    },
-    {
-      name: "Financial Performance & Sales vs Target",
-      description:
-        "Sales performance dashboard comparing actual results against targets to identify variances and performance risks. It supports better forecasting, target tracking, and corrective decision-making for improved sales outcomes.",
-      link: "https://github.com/michaelmaher2252001-create/financial-performance-sales-analysis",
-      skills: ["Power BI", "Data Analysis", "Excel"],
-      image: "/projects/sales-vs-target.png"
-    },
-    {
-      name: "Fraud & Financial Transactions Analysis",
-      description:
-        "Fraud and financial risk analysis dashboard built to detect suspicious transaction patterns and quantify potential losses. The analysis helps identify high-risk channels, monitor fraud trends, and strengthen financial controls.",
-      link: "https://github.com/michaelmaher2252001-create/fraud-analysis",
-      skills: ["Power BI", "Risk Analysis", "Data Analysis"],
-      image: "/projects/fraud-analysis.png"
     }
   ]
 };
-``
