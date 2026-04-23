@@ -1,3 +1,4 @@
+// force full pages redeploy
 // @ts-check
 import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
