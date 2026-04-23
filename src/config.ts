@@ -36,20 +36,19 @@ export const siteConfig = {
     "Data and Financial Analyst focused on financial performance analysis, profitability, and dashboard-driven business insights.",
 
   aboutMe:
-  "Data Analyst with a strong finance and business background, specializing in Power BI and SQL to analyze sales, financial performance, and fraud risk. Experienced in building interactive dashboards, performing data modeling and DAX calculations, and translating complex datasets into actionable business insights.",
-``
+    "Data Analyst with a strong finance and business background, specializing in Power BI and SQL to analyze sales, financial performance, and fraud risk. Experienced in building interactive dashboards, performing data modeling and DAX calculations, and translating complex datasets into actionable business insights.",
+
   name: "Michael Maher",
   role: "Data Analyst | Financial Analyst",
   location: "Cairo, Egypt",
-  email: "michaelmaher2252001@gmail.com",
+  email: "Michael.maher2252001@gmail.com",
 
   social: {
     github: "https://github.com/michaelmaher2252001-create",
-    linkedin: "https://www.linkedin.com/in/michael-maher",
-    email: "mailto:michaelmaher2252001@gmail.com",
+    linkedin: "https://www.linkedin.com/in/michael-maher-3104ab216",
+    email: "mailto:Michael.maher2252001@gmail.com",
   },
 
-  // references the projects array above
   projects: projects,
 
   education: [
