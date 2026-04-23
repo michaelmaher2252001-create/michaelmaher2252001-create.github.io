@@ -10,29 +10,36 @@ import { siteConfig } from "../config";
 import "../styles/global.css";
 ---
 
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={siteConfig.description} />
-    <title>{siteConfig.name} - {siteConfig.title}</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>{siteConfig.name} – {siteConfig.title}</title>
   </head>
 
   <body>
     <Header />
+
     <main>
       <Hero />
       <About />
-
-      <!-- IMPORTANT: no map(), no logic -->
       <Projects />
-
       <Experience />
       <Education />
     </main>
+
     <Footer />
   </body>
 </html>
-``
