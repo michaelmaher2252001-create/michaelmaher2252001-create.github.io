@@ -33,3 +33,10 @@ a {
 }
 
 a:hover {
+  color: #93c5fd; /* blue-300 */
+}
+
+/* Subtle section separation */
+section {
+  border-bottom: 1px solid #1e293b; /* slate-800 */
+}
