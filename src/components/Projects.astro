@@ -1,10 +1,6 @@
 ---
 import { siteConfig } from "../config";
 
-/**
- * GUARANTEE projects is always an array
- * This prevents `.map()` from ever crashing the Astro build
- */
 const projects = Array.isArray(siteConfig.projects)
   ? siteConfig.projects
   : [];
@@ -14,56 +10,23 @@ const projects = Array.isArray(siteConfig.projects)
   <section id="projects" class="p-8 sm:p-12 md:p-16 lg:p-24">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
       <div class="lg:col-span-4">
-        <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900">
-          Projects
-        </h2>
-        <div
-          class="w-[75px] h-[5px] mt-2 rounded-full"
-          style={`background-color: ${siteConfig.accentColor ?? "#111827"}`}
-        />
+        <h2 class="text-4xl font-bold text-gray-900">Projects</h2>
+        <div class="w-16 h-1 mt-2 bg-gray-900 rounded-full"></div>
       </div>
 
-      <div class="lg:col-span-8">
-        <div class="space-y-8">
-          {projects.map((project, index) => {
-            const Component = project.href ? "a" : "div";
-            const linkProps = project.href
-              ? {
-                  href: project.href,
-                  target: "_blank",
-                  rel: "noopener noreferrer",
-                }
-              : {};
-
-            return (
-              <div class="group relative">
-                <Component
-                  {...linkProps}
-                  class={`block relative p-4 sm:p-6 md:p-8 bg-gray-50 rounded-xl sm:rounded-2xl border border-gray-200 transition-all duration-300 ${
-                    project.href
-                      ? "hover:bg-white hover:shadow-xl hover:border-gray-300 hover:-translate-y-1"
-                      : ""
-                  }`}
-                >
-                  <div class="space-y-4">
-                    <div>
-                      <span class="text-sm font-mono text-gray-500">
-                        0{index + 1}
-                      </span>
-                      <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mt-1">
-                        {project.title}
-                      </h3>
-                    </div>
-
-                    <p class="text-base sm:text-lg text-gray-600 leading-relaxed">
-                      {project.description}
-                    </p>
-                  </div>
-                </Component>
-              </div>
-            );
-          })}
-        </div>
+      <div class="lg:col-span-8 space-y-8">
+        {projects.map((project, index) => (
+          <a
+            href={project.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block p-6 bg-gray-50 border rounded-xl hover:bg-white hover:shadow-lg transition"
+          >
+            <span class="text-sm text-gray-500">0{index + 1}</span>
+            <h3 class="text-xl font-bold mt-2">{project.title}</h3>
+            <p class="mt-2 text-gray-600">{project.description}</p>
+          </a>
+        ))}
       </div>
     </div>
   </section>
