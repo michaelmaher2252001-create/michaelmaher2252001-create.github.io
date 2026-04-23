@@ -11,12 +11,13 @@ const projects = Array.isArray(siteConfig.projects)
     <div class="space-y-6">
       <h2 class="text-4xl font-bold text-gray-900">Projects</h2>
 
-      {projects.map((project) => (
+      {projects.map((project, index) => (
         <a
+          key={index}
           href={project.href}
           target="_blank"
           rel="noopener noreferrer"
-          class="block p-6 bg-gray-50 border rounded-xl hover:shadow-md transition"
+          class="block p-4 rounded-lg border border-gray-200 hover:bg-gray-50"
         >
           <h3 class="text-xl font-semibold">{project.title}</h3>
           <p class="text-gray-600 mt-2">{project.description}</p>
