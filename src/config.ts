@@ -35,6 +35,9 @@ export const siteConfig = {
   description:
     "Data and Financial Analyst focused on financial performance analysis, profitability, and dashboard-driven business insights.",
 
+  aboutMe:
+  "Data Analyst with a strong finance and business background, specializing in Power BI and SQL to analyze sales, financial performance, and fraud risk. Experienced in building interactive dashboards, performing data modeling and DAX calculations, and translating complex datasets into actionable business insights.",
+``
   name: "Michael Maher",
   role: "Data Analyst | Financial Analyst",
   location: "Cairo, Egypt",
