@@ -58,8 +58,8 @@ socials: {
     achievements: [
       "Focused on Accounting, Finance, and Business Administration",
       "Strong foundation in financial analysis, reporting, and business decision-making",
-      "Graduated in 2023",
-    ],
+      "Graduated in 2023"
+    ]
   },
   {
     degree: "Data Analytics & Power BI Learning Paths",
@@ -73,9 +73,7 @@ socials: {
       "Prepare and visualize data with Microsoft Power BI",
       "Design effective reports in Power BI",
       "Manage and secure Power BI",
-      "Query and modify data using Transact-SQL",
-    ],
-  },
+      "Query and modify data using Transact-SQL"
+    ]
+  }
 ],
-],
-``
