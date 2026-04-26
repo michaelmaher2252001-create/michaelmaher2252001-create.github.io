@@ -43,39 +43,40 @@ export const siteConfig = {
   location: "Cairo, Egypt",
   email: "michael.maher2252001@gmail.com",
 
-socials: {
-  github: "https://github.com/michaelmaher2252001-create",
-  linkedin: "https://www.linkedin.com/in/michael-maher-3104ab216",
-  email: "michael.maher2252001@gmail.com",
-},
+  socials: {
+    github: "https://github.com/michaelmaher2252001-create",
+    linkedin: "https://www.linkedin.com/in/michael-maher-3104ab216",
+    email: "michael.maher2252001@gmail.com",
+  },
+
   projects: projects,
 
-education: [
-  {
-    degree: "Bachelor's Degree in Commerce",
-    school: "Faculty of Commerce (English Section), Helwan University",
-    dateRange: "2019 – 2023",
-    achievements: [
-      "Focused on Accounting, Finance, and Business Administration",
-      "Strong foundation in financial analysis, reporting, and business decision-making",
-      "Graduated in 2023"
-    ]
-  },
-  {
-    degree: "Data Analytics & Power BI Learning Paths",
-    school: "Microsoft Learn",
-    dateRange: "2026",
-    achievements: [
-      "Get started with Microsoft data analytics",
-      "Prepare data for analysis with Power BI",
-      "Model data with Power BI",
-      "Use DAX in semantic models",
-      "Prepare and visualize data with Microsoft Power BI",
-      "Design effective reports in Power BI",
-      "Manage and secure Power BI",
-      "Query and modify data using Transact-SQL"
-    ]
-  }
-]
+  education: [
+    {
+      degree: "Bachelor's Degree in Commerce",
+      school: "Faculty of Commerce (English Section), Helwan University",
+      dateRange: "2019 – 2023",
+      achievements: [
+        "Focused on Accounting, Finance, and Business Administration",
+        "Strong foundation in financial analysis, reporting, and business decision-making",
+        "Graduated in 2023",
+      ],
+    },
+    {
+      degree: "Data Analytics & Power BI Learning Paths",
+      school: "Microsoft Learn",
+      dateRange: "2026",
+      achievements: [
+        "Get started with Microsoft data analytics",
+        "Prepare data for analysis with Power BI",
+        "Model data with Power BI",
+        "Use DAX in semantic models",
+        "Prepare and visualize data with Microsoft Power BI",
+        "Design effective reports in Power BI",
+        "Manage and secure Power BI",
+        "Query and modify data using Transact-SQL",
+      ],
+    },
+  ],
 };
 ``
