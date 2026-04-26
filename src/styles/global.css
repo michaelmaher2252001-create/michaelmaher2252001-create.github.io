@@ -1,8 +1,11 @@
 @import "tailwindcss";
 
+/* Base font */
 body {
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
+
+/* Fade-up animation */
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -14,6 +17,14 @@ body {
   }
 }
 
+/* Animation utility */
 .animate-fade-up {
   animation: fadeUp 0.8s ease-out both;
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up {
+    animation: none;
+  }
 }
