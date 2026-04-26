@@ -46,26 +46,36 @@ export const siteConfig = {
   social: {
     github: "https://github.com/michaelmaher2252001-create",
     linkedin: "https://www.linkedin.com/in/michael-maher-3104ab216",
-    email: "mailto:Michael.maher2252001@gmail.com",
+    email: "Michael.maher2252001@gmail.com",
   },
 
   projects: projects,
 
-  education: [
-    {
-      degree: "Bachelor’s Degree in Accounting",
-      institution: "Helwan University",
-      period: "2019 – 2023",
-    },
-  ],
-
-  microsoftLearnPaths: [
-    "Prepare data for analysis with Power BI",
-    "Model data with Power BI",
-    "Design effective reports in Power BI",
-    "Manage and secure Power BI",
-    "Use DAX in semantic models",
-    "Query and modify data using Transact-SQL",
-    "Get started with Microsoft data analytics",
-  ],
-};
+  education: education: [
+  {
+    institution: "Faculty of Commerce (English Section), Helwan University",
+    degree: "Bachelor's Degree in Commerce",
+    period: "2019 – 2023",
+    details: [
+      "Focused on Accounting, Finance, and Business Administration",
+      "Strong foundation in financial analysis, reporting, and business decision-making",
+      "Graduated in 2023",
+    ],
+  },
+  {
+    institution: "Microsoft Learn",
+    degree: "Data Analytics & Power BI Learning Paths",
+    period: "2026",
+    details: [
+      "Get started with Microsoft data analytics",
+      "Prepare data for analysis with Power BI",
+      "Model data with Power BI",
+      "Use DAX in semantic models",
+      "Prepare and visualize data with Microsoft Power BI",
+      "Design effective reports in Power BI",
+      "Manage and secure Power BI",
+      "Query and modify data using Transact-SQL",
+    ],
+  },
+],
+``
