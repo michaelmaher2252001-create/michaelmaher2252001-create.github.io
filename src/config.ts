@@ -50,7 +50,7 @@ socials: {
 },
   projects: projects,
 
- education: [
+education: [
   {
     degree: "Bachelor's Degree in Commerce",
     school: "Faculty of Commerce (English Section), Helwan University",
@@ -76,4 +76,6 @@ socials: {
       "Query and modify data using Transact-SQL"
     ]
   }
-],
+]
+};
+``
