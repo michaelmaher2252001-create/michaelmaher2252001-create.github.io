@@ -51,22 +51,22 @@ export const siteConfig = {
 
   projects: projects,
 
-  education: education: [
+ education: [
   {
-    institution: "Faculty of Commerce (English Section), Helwan University",
     degree: "Bachelor's Degree in Commerce",
-    period: "2019 – 2023",
-    details: [
+    school: "Faculty of Commerce (English Section), Helwan University",
+    dateRange: "2019 – 2023",
+    achievements: [
       "Focused on Accounting, Finance, and Business Administration",
       "Strong foundation in financial analysis, reporting, and business decision-making",
       "Graduated in 2023",
     ],
   },
   {
-    institution: "Microsoft Learn",
     degree: "Data Analytics & Power BI Learning Paths",
-    period: "2026",
-    details: [
+    school: "Microsoft Learn",
+    dateRange: "2026",
+    achievements: [
       "Get started with Microsoft data analytics",
       "Prepare data for analysis with Power BI",
       "Model data with Power BI",
@@ -77,5 +77,6 @@ export const siteConfig = {
       "Query and modify data using Transact-SQL",
     ],
   },
+],
 ],
 ``
