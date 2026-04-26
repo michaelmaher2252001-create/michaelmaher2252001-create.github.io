@@ -2,41 +2,29 @@
 import { siteConfig } from "../config";
 ---
 
-<header class="w-full py-6 px-6 flex justify-between items-center">
-  <div class="text-xl font-bold">
+<header class="w-full py-6 px-6 flex justify-between items-center bg-slate-900">
+  <div class="text-xl font-bold text-white">
     {siteConfig.name}
   </div>
 
-  <nav class="flex gap-6 text-sm">
+  <nav class="flex gap-6 text-sm text-gray-300">
     {siteConfig.socials?.email && (
-      <a
-        href={`mailto:${siteConfig.socials.email}`}
-        class="hover:text-blue-400 transition"
-      >
+      <a href={`mailto:${siteConfig.socials.email}`} class="hover:text-white">
         Email
       </a>
     )}
 
     {siteConfig.socials?.linkedin && (
-      <a
-        href={siteConfig.socials.linkedin}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hover:text-blue-400 transition"
-      >
+      <a href={siteConfig.socials.linkedin} target="_blank" class="hover:text-white">
         LinkedIn
       </a>
     )}
 
     {siteConfig.socials?.github && (
-      <a
-        href={siteConfig.socials.github}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hover:text-blue-400 transition"
-      >
+      <a href={siteConfig.socials.github} target="_blank" class="hover:text-white">
         GitHub
       </a>
     )}
   </nav>
 </header>
+  
