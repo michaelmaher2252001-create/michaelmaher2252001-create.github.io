@@ -1,5 +1,5 @@
 ---
-import { siteConfig } from "../config"; // ✅ REQUIRED
+import { siteConfig } from "../config";
 
 import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
@@ -11,3 +11,26 @@ import Footer from "../components/Footer.astro";
 
 import "../styles/global.css";
 ---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{siteConfig.title}</title>
+  </head>
+
+  <body class="bg-slate-900 text-gray-200 antialiased">
+    <Header />
+
+    <main>
+      <Hero />
+      <About />
+      <Projects />
+      <Experience />
+      <Education />
+    </main>
+
+    <Footer />
+  </body>
+</html>
