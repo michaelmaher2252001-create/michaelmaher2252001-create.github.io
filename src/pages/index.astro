@@ -8,8 +8,10 @@ import Education from "../components/Education.astro";
 import Footer from "../components/Footer.astro";
 
 import "../styles/global.css";
+
+// ✅ THIS LINE FIXES THE BUILD ERROR
+const siteConfig = {};
 ---
-<!-- force rebuild -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -33,3 +35,4 @@ import "../styles/global.css";
     <Footer />
   </body>
 </html>
+``
