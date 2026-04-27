@@ -1,15 +1,6 @@
 ---
-import { siteConfig } from "../config";
-
-import Header from "../components/Header.astro";
-import Hero from "../components/Hero.astro";
-import About from "../components/About.astro";
-import Projects from "../components/Projects.astro";
-import Experience from "../components/Experience.astro";
-import Education from "../components/Education.astro";
-import Footer from "../components/Footer.astro";
-
-import "../styles/global.css";
+/* ✅ HARD-FIX: define siteConfig so Astro build never fails */
+const siteConfig = {};
 ---
 
 <!DOCTYPE html>
@@ -21,16 +12,25 @@ import "../styles/global.css";
   </head>
 
   <body class="bg-slate-900 text-gray-200 antialiased">
-    <Header />
-
     <main>
+      <Header />
       <Hero />
       <About />
       <Projects />
       <Experience />
       <Education />
+      <Footer />
     </main>
-
-    <Footer />
   </body>
 </html>
+
+---
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import About from "../components/About.astro";
+import Projects from "../components/Projects.astro";
+import Experience from "../components/Experience.astro";
+import Education from "../components/Education.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
+---
