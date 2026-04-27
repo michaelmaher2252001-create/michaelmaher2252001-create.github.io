@@ -42,10 +42,11 @@ export const siteConfig = {
   role: "Data Analyst | Financial Analyst",
   location: "Cairo, Egypt",
 
-  email: "michael.maher2252001@gmail.com",
+  // ✅ FINAL CORRECT EMAIL
+  email: "michael.maher225200@gmail.com",
 
   socials: {
-    email: "michael.maher2252001@gmail.com",
+    email: "michael.maher225200@gmail.com",
     github: "https://github.com/michaelmaher2252001-create",
     linkedin: "https://www.linkedin.com/in/michael-maher-3104ab216",
   },
