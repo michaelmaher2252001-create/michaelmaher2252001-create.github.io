@@ -2,41 +2,7 @@
 import { siteConfig } from "../config";
 ---
 
-<header class="w-full py-6 px-6 flex justify-between items-center">
-  <div class="text-xl font-bold">
-    {siteConfig.name}
-  </div>
-
-  <nav class="flex gap-6 text-sm">
-    {siteConfig.socials?.email && (
-      <a
-        href={`mailto:${siteConfig.socials.email}`}
-        class="hover:text-blue-400 transition"
-      >
-        Email
-      </a>
-    )}
-
-    {siteConfig.socials?.linkedin && (
-      <a
-        href={siteConfig.socials.linkedin}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hover:text-blue-400 transition"
-      >
-        LinkedIn
-      </a>
-    )}
-
-    {siteConfig.socials?.github && (
-      <a
-        href={siteConfig.socials.github}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hover:text-blue-400 transition"
-      >
-        GitHub
-      </a>
-    )}
-  </nav>
-</header>
+<footer class="py-6 text-center text-sm text-gray-400">
+  © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
+</footer>
+``
