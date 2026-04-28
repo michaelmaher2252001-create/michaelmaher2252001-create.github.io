@@ -6,78 +6,52 @@ export const projects = [
   {
     title: "Fraud Detection & Risk Monitoring",
     description:
-      "Power BI dashboard monitoring fraudulent transactions across payment channels and regions.",
-    href: "https://github.com/michaelmaher2252001-create/Fraud-Detection-Risk-Monitoring",
+      "Power BI dashboard monitoring fraudulent transactions across payment channels and geographic regions.",
     image: "/projects/fraud.png",
+    insights: [
+      "Detected unusual transaction patterns across specific regions",
+      "Identified high-risk payment channels with elevated fraud rates",
+      "Highlighted time periods with increased fraud activity",
+    ],
+    impact: [
+      "Supported fraud risk monitoring and investigation efforts",
+      "Improved visibility into high-risk transactions",
+      "Enabled faster identification of fraud-prone areas",
+    ],
+    href: "https://github.com/michaelmaher2252001-create/Fraud-Detection-Risk-Monitoring",
   },
   {
     title: "Financial Performance & Variance Analysis",
     description:
-      "Analysis of actual versus target sales performance with variance and profitability insights.",
-    href: "https://github.com/michaelmaher2252001-create/Financial-Performance-Variance-Analysis",
+      "Analysis of actual versus target performance to identify revenue, cost, and profitability variances.",
     image: "/projects/financial-performance.png",
+    insights: [
+      "Identified unfavorable variances between actual and target performance",
+      "Highlighted cost drivers impacting profitability",
+      "Detected segments consistently underperforming targets",
+    ],
+    impact: [
+      "Supported performance review and planning discussions",
+      "Improved understanding of variance drivers",
+      "Enabled more informed financial decision-making",
+    ],
+    href: "https://github.com/michaelmaher2252001-create/Financial-Performance-Variance-Analysis",
   },
   {
     title: "Sales Performance & Profitability Analysis",
     description:
-      "Dashboard analyzing sales trends, product performance, and profit margins.",
-    href: "https://github.com/michaelmaher2252001-create/Sales-Performance-Profitability-Analysis",
+      "Power BI dashboard analyzing sales trends, cost structure, and profit margins across regions and time periods.",
     image: "/projects/sales.png",
+    insights: [
+      "Top-performing regions contributed the majority of total sales",
+      "COGS growth reduced profitability in specific markets",
+      "Clear seasonal sales patterns observed across the year",
+    ],
+    impact: [
+      "Highlighted margin pressure areas for management review",
+      "Supported pricing and cost optimization discussions",
+      "Improved focus on high-performing markets and products",
+    ],
+    href: "https://github.com/michaelmaher2252001-create/Sales-Performance-Profitability-Analysis",
   },
 ];
-
-// ==========================
-// SITE CONFIG
-// ==========================
-
-export const siteConfig = {
-  title: "Michael Maher",
-  description:
-    "Data and Financial Analyst focused on financial performance analysis, profitability, and dashboard-driven business insights.",
-
-  aboutMe:
-    "Data Analyst with a strong finance and business background, specializing in Power BI and SQL to analyze sales, financial performance, and fraud risk. Experienced in building interactive dashboards, performing data modeling and DAX calculations, and translating complex datasets into actionable business insights.",
-
-  name: "Michael Maher",
-  role: "Data Analyst | Financial Analyst",
-  location: "Cairo, Egypt",
-
-  // ✅ FINAL CORRECT EMAIL
-  email: "michael.maher225200@gmail.com",
-
-  socials: {
-    email: "michael.maher225200@gmail.com",
-    github: "https://github.com/michaelmaher2252001-create",
-    linkedin: "https://www.linkedin.com/in/michael-maher-3104ab216",
-  },
-
-  projects: projects,
-
-  education: [
-    {
-      degree: "Bachelor's Degree in Commerce",
-      school: "Faculty of Commerce (English Section), Helwan University",
-      dateRange: "2019 – 2023",
-      achievements: [
-        "Focused on Accounting, Finance, and Business Administration",
-        "Strong foundation in financial analysis, reporting, and business decision-making",
-        "Graduated in 2023",
-      ],
-    },
-    {
-      degree: "Data Analytics & Power BI Learning Paths",
-      school: "Microsoft Learn",
-      dateRange: "2026",
-      achievements: [
-        "Get started with Microsoft data analytics",
-        "Prepare data for analysis with Power BI",
-        "Model data with Power BI",
-        "Use DAX in semantic models",
-        "Prepare and visualize data with Microsoft Power BI",
-        "Design effective reports in Power BI",
-        "Manage and secure Power BI",
-        "Query and modify data using Transact-SQL",
-      ],
-    },
-  ],
-};
