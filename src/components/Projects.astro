@@ -1,57 +1,21 @@
 ---
 import { siteConfig } from "../config";
-
-const projects = Array.isArray(siteConfig.projects)
-  ? siteConfig.projects
-  : [];
 ---
 
-{projects.length > 0 && (
-  <section id="projects" class="p-8 sm:p-12 md:p-16 lg:p-24">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16">
+<section class="px-6 py-20 max-w-6xl mx-auto">
+  <h2 class="text-3xl font-bold mb-10">Projects</h2>
 
-      <!-- Section title -->
-      <div class="lg:col-span-4">
-        <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-semibold text-gray-100">
-          Projects
-        </h2>
-        <div class="w-[75px] h-[4px] mt-3 rounded-full bg-blue-400"></div>
-      </div>
-
-      <!-- Projects cards -->
-      <div class="lg:col-span-8 grid grid-cols-1 gap-8">
-        {projects.map((project) => (
-          <a
-            href={project.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="group block bg-slate-800 border border-slate-700 rounded-2xl overflow-hidden hover:border-blue-400 transition-colors duration-300"
-          >
-            <!-- Screenshot -->
-            <img
-              src={project.image}
-              alt={`${project.title} dashboard`}
-              class="w-full h-auto object-cover"
-              loading="lazy"
-            />
-
-            <!-- Content -->
-            <div class="p-6">
-              <h3 class="text-xl font-semibold text-gray-100 group-hover:text-blue-400 transition">
-                {project.title}
-              </h3>
-              <p class="mt-2 text-gray-300">
-                {project.description}
-              </p>
-
-              <span class="inline-block mt-4 text-sm font-medium text-blue-400">
-                View Project →
-              </span>
-            </div>
-          </a>
-        ))}
-      </div>
-
-    </div>
-  </section>
-)}
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    {siteConfig.projects.map((project) => (
+      <a
+        href={project.href}
+        target="_blank"
+        class="border border-gray-700 rounded-lg p-5 hover:bg-gray-800 transition"
+      >
+        <h3 class="text-lg font-semibold mb-2">{project.title}</h3>
+        <p class="text-sm text-gray-400">{project.description}</p>
+      </a>
+    ))}
+  </div>
+</section>
+``
