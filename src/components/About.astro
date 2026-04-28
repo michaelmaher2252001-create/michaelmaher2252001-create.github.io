@@ -1,38 +1,45 @@
----
-import { siteConfig } from "../config";
----
+<section class="py-24 bg-slate-800">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12">
 
-<section id="about" class="p-8 sm:p-12 md:p-16 lg:p-24">
-  <div>
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
-      <div class="lg:col-span-4">
-        <h2
-          class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900"
-        >
-          About Me
-        </h2>
-        <div
-          class="w-[75px] h-[5px] mt-2 rounded-full"
-          style={`background-color: ${siteConfig.accentColor}`}
-        ></div>
-      </div>
+    <!-- LEFT: ABOUT TEXT -->
+    <div>
+      <h2 class="text-3xl font-bold mb-6 text-white">
+        About Me
+      </h2>
 
-      <div class="lg:col-span-8 space-y-8">
-        <p class="text-lg sm:text-xl md:text-2xl leading-relaxed text-gray-600">
-          {siteConfig.aboutMe}
-        </p>
+      <p class="text-gray-300 leading-relaxed mb-4">
+        I am a Data and Financial Analyst with a strong business and finance
+        background, focused on helping organizations understand performance,
+        profitability, and risk.
+      </p>
 
-        <div class="pt-4">
-          <div class="flex flex-wrap gap-3">
-            {(siteConfig.skills ?? []).map((skill) => (
-              <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-gray-100 text-gray-800 rounded-full text-sm sm:text-base md:text-lg font-medium hover:bg-gray-200 transition-colors duration-200">
-                {skill}
-              </span>
-            ))}
-          </div>
-        </div>
-      </div>
+      <p class="text-gray-300 leading-relaxed mb-4">
+        I specialize in transforming raw sales and financial data into clear,
+        actionable insights that support pricing decisions, performance
+        optimization, and strategic planning.
+      </p>
+
+      <p class="text-gray-300 leading-relaxed">
+        My work involves analyzing sales trends, identifying margin drivers,
+        evaluating regional and product performance, and communicating findings
+        through interactive Power BI dashboards designed for decision-makers.
+      </p>
     </div>
+
+    <!-- RIGHT: HIGHLIGHTS BOX -->
+    <div class="bg-slate-900 p-8 rounded-xl border border-white/5 shadow-lg">
+      <h3 class="text-xl font-semibold mb-5 text-white">
+        What I Focus On
+      </h3>
+
+      <ul class="space-y-3 text-gray-300">
+        <li>• Sales & profitability analysis</li>
+        <li>• Financial performance and variance analysis</li>
+        <li>• Business insights & executive reporting</li>
+        <li>• Power BI dashboards for decision‑makers</li>
+        <li>• Data‑driven decision support</li>
+      </ul>
+    </div>
+
   </div>
 </section>
-``
