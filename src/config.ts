@@ -32,26 +32,3 @@ export const projects = [
     ],
     impact: [
       "Supported performance review and planning discussions",
-      "Improved understanding of variance drivers",
-      "Enabled more informed financial decision-making",
-    ],
-    href: "https://github.com/michaelmaher2252001-create/Financial-Performance-Variance-Analysis",
-  },
-  {
-    title: "Sales Performance & Profitability Analysis",
-    description:
-      "Power BI dashboard analyzing sales trends, cost structure, and profit margins across regions and time periods.",
-    image: "/projects/sales.png",
-    insights: [
-      "Top-performing regions contributed the majority of total sales",
-      "COGS growth reduced profitability in specific markets",
-      "Clear seasonal sales patterns observed across the year",
-    ],
-    impact: [
-      "Highlighted margin pressure areas for management review",
-      "Supported pricing and cost optimization discussions",
-      "Improved focus on high-performing markets and products",
-    ],
-    href: "https://github.com/michaelmaher2252001-create/Sales-Performance-Profitability-Analysis",
-  },
-];
