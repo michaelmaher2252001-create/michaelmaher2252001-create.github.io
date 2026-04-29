@@ -2,7 +2,7 @@
 // PROJECTS DATA
 // ==========================
 
-export const projects = [
+const projects = [
   {
     title: "Fraud Detection & Risk Monitoring",
     description:
@@ -32,3 +32,50 @@ export const projects = [
     ],
     impact: [
       "Supported performance review and planning discussions",
+      "Improved understanding of variance drivers",
+      "Enabled more informed financial decision-making",
+    ],
+    href: "https://github.com/michaelmaher2252001-create/Financial-Performance-Variance-Analysis",
+  },
+  {
+    title: "Sales Performance & Profitability Analysis",
+    description:
+      "Power BI dashboard analyzing sales trends, cost structure, and profit margins.",
+    image: "/projects/sales.png",
+    insights: [
+      "Top-performing regions contributed the majority of total sales",
+      "COGS growth reduced profitability in specific markets",
+      "Clear seasonal sales patterns observed across the year",
+    ],
+    impact: [
+      "Highlighted margin pressure areas for management review",
+      "Supported pricing and cost optimization discussions",
+      "Improved focus on high-performing markets",
+    ],
+    href: "https://github.com/michaelmaher2252001-create/Sales-Performance-Profitability-Analysis",
+  },
+];
+
+// ==========================
+// SITE CONFIG
+// ==========================
+
+const siteConfig = {
+  title: "Michael Maher",
+  description:
+    "Data and Financial Analyst focused on performance, profitability, and business insights.",
+
+  name: "Michael Maher",
+  role: "Data Analyst | Financial Analyst",
+  location: "Cairo, Egypt",
+
+  socials: {
+    email: "michael.maher225200@gmail.com",
+    github: "https://github.com/michaelmaher2252001-create",
+    linkedin: "https://www.linkedin.com/in/michael-maher-3104ab216",
+  },
+
+  projects,
+};
+
+export default siteConfig;
