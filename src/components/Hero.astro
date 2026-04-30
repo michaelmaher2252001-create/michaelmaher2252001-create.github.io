@@ -17,14 +17,17 @@ import siteConfig from "../config.ts";
   <div class="flex justify-center gap-6 mb-12">
 
     <!-- WhatsApp -->
-    https://wa.me/201013559339 target="_blank" title="WhatsApp Me"
-      <svg
-        class="w-6 h-6 text-green-400 transition transform hover:scale-110 hover:drop-shadow-lg"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 32 32"
-      >
-        <path d="M16.003 2.002C8.282 2.002 2 8.285 2 16.006c0 2.864.743
-        5.645 2.155 8.117L2 30l6.027-2.084a13.94
+    <a
+      href="https://wa.me/201013559339"
+      target="_blank"
+      title="WhatsApp Me"
+      class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center
+             transition hover:scale-110 hover:bg-green-500/20"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+           class="w-6 h-6 text-green-400 fill-current">
+        <path d="M16.003 2.002C8.282 2.002 2 8.285 2 16.006c0
+        2.864.743 5.645 2.155 8.117L2 30l6.027-2.084a13.94
         13.94 0 0 0 7.976 2.45h.001c7.721 0
         14.003-6.283 14.003-14.004
         0-7.72-6.282-14.36-14.004-14.36z"/>
@@ -32,26 +35,32 @@ import siteConfig from "../config.ts";
     </a>
 
     <!-- Email -->
-    {`mailto:${siteConfig.socials.email}`} title="Email Me"
-      <svg
-        class="w-6 h-6 text-gray-200 transition transform hover:scale-110 hover:drop-shadow-lg"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-      >
+    <a
+      href={`mailto:${siteConfig.socials.email}`}
+      title="Email Me"
+      class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center
+             transition hover:scale-110 hover:bg-white/10"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+           class="w-6 h-6 text-gray-200 fill-current">
         <path d="M4 4h16v16H4z"/>
         <path d="m22 6-10 7L2 6"/>
       </svg>
     </a>
 
     <!-- LinkedIn -->
-    {siteConfig.socials.linkedin} target="_blank" title="LinkedIn Profile"
-      <svg
-        class="w-6 h-6 text-blue-400 transition transform hover:scale-110 hover:drop-shadow-lg"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-      >
-        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2
-        2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+    <a
+      href={siteConfig.socials.linkedin}
+      target="_blank"
+      title="LinkedIn Profile"
+      class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center
+             transition hover:scale-110 hover:bg-blue-500/20"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+           class="w-6 h-6 text-blue-400 fill-current">
+        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2
+        2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6
+        6 0 0 1 6-6z"/>
         <rect x="2" y="9" width="4" height="12"/>
         <circle cx="4" cy="4" r="2"/>
       </svg>
@@ -60,7 +69,13 @@ import siteConfig from "../config.ts";
   </div>
 
   <!-- DOWNLOAD CV -->
-  /Michael_Maher_CV.pdf download
+  <a
+    href="/Michael_Maher_CV.pdf"
+    download
+    class="inline-block bg-white text-slate-900 font-semibold
+           px-6 py-3 rounded-full shadow
+           transition hover:scale-105"
+  >
     Download CV
   </a>
 </section>
