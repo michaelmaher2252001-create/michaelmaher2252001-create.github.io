@@ -1,8 +1,25 @@
 ---
-import { siteConfig } from "../config";
+import siteConfig from "../config.ts";
 ---
 
-<footer class="py-6 text-center text-sm text-gray-400">
-  © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
+<footer class="py-10 bg-slate-950 text-gray-400">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <p class="text-sm">
+      © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
+    </p>
+
+    <div class="mt-4 flex justify-center gap-6 text-sm">
+      {"mailto:" + siteConfig.socials.email}
+        Email
+      </a>
+
+      {siteConfig.socials.github}
+        GitHub
+      </a>
+
+      {siteConfig.socials.linkedin}
+        LinkedIn
+      </a>
+    </div>
+  </div>
 </footer>
-``
