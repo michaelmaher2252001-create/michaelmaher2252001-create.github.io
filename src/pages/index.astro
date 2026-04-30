@@ -1,4 +1,6 @@
 ---
+import siteConfig from "../config.ts";
+
 import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
 import About from "../components/About.astro";
@@ -8,9 +10,6 @@ import Education from "../components/Education.astro";
 import Footer from "../components/Footer.astro";
 
 import "../styles/global.css";
-
-// ✅ THIS LINE FIXES THE BUILD ERROR
-const siteConfig = {};
 ---
 
 <!DOCTYPE html>
