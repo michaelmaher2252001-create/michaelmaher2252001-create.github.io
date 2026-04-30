@@ -16,12 +16,16 @@ import siteConfig from "../config.ts";
   </p>
 
   <!-- CONTACT ICONS -->
-  <div class="flex justify-center gap-6 mb-10 text-gray-300">
+  <div class="flex justify-center gap-8 mb-10 text-gray-300">
 
     <!-- WhatsApp -->
-    https://wa.me/201013559339 target="_blank" aria-label="WhatsApp"
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
-        class="w-7 h-7 fill-current hover:text-green-400 transition">
+    <a
+      href="https://wa.me/201013559339"
+      target="_blank"
+      aria-label="WhatsApp"
+      class="hover:text-green-400 transition"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-7 h-7 fill-current">
         <path d="M16.003 2.002C8.282 2.002 2 8.285 2 16.006c0 2.864.743
         5.645 2.155 8.117L2 30l6.027-2.084a13.94
         13.94 0 0 0 7.976 2.45h.001c7.721 0
@@ -31,18 +35,16 @@ import siteConfig from "../config.ts";
     </a>
 
     <!-- Email -->
-    {"mailto:" + siteConfig.socials.email} aria-label="Email"
-      <svg xmlns="http://www.w3.org/2000/svg"
-        class="w-7 h-7 fill-current hover:text-white transition"
-        viewBox="0 0 24 24">
+    <a
+      href={`mailto:${siteConfig.socials.email}`}
+      aria-label="Email"
+      class="hover:text-white transition"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-7 h-7 fill-current">
         <path d="M4 4h16v16H4z"/>
         <path d="m22 6-10 7L2 6"/>
       </svg>
     </a>
 
     <!-- LinkedIn -->
-    {siteConfig.socials.linkedin} target="_blank" aria-label="LinkedIn"
-      <svg xmlns="http://www.w3.org/2000/svg"
-        class="w-7 h-7 fill-current hover:text-blue-400 transition"
-        viewBox="0 0 24 24">
-
+    <a
