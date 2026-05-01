@@ -7,7 +7,7 @@ const projects = [
     title: "Fraud Detection & Risk Monitoring",
     description:
       "Power BI dashboard monitoring fraudulent transactions across payment channels and geographic regions.",
-    image: "/projects/fraud.png",
+    image: "/projects/Fraud analysis.png",
     insights: [
       "Detected unusual transaction patterns across specific regions",
       "Identified high-risk payment channels with elevated fraud rates",
