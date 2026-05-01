@@ -24,15 +24,20 @@ const projects = [
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Michael Maher | Data Analyst</title>
+
     <meta
       name="description"
       content="Portfolio website of Michael Maher – Data Analyst"
     />
+
+    <!-- ✅ THIS LINE RESTORES THE THEME & BACKGROUND -->
+    <link rel="stylesheet" href="/styles/global.css" />
   </head>
 
   <body>
-    <!-- ===== HEADER / NAV ===== -->
-    <header>
+    <!-- ===== HEADER ===== -->
+    <header class="site-header">
+      <h1>Michael Maher</h1>
       <nav>
         <a href="#hero">Home</a>
         <a href="#about">About</a>
@@ -42,18 +47,17 @@ const projects = [
     </header>
 
     <!-- ===== HERO ===== -->
-    <section id="hero">
-      <h1>Michael Maher</h1>
-      <p>Data Analyst | Business Intelligence | Dashboards</p>
+    <section id="hero" class="hero">
+      <h2>Data Analyst & BI Specialist</h2>
+      <p>Turning data into actionable insights</p>
     </section>
 
     <!-- ===== ABOUT ===== -->
     <section id="about">
       <h2>About Me</h2>
       <p>
-        Data Analyst with experience in data visualization, reporting,
-        and business insights. Passionate about transforming data into
-        actionable decisions.
+        Data Analyst experienced in dashboards, reporting, and analytical
+        insights to support business decisions.
       </p>
     </section>
 
@@ -73,12 +77,7 @@ const projects = [
       <div class="projects-grid">
         {projects.map((project) => (
           <article class="project-card">
-            <img
-              src={project.image}
-              alt={project.title}
-              width="400"
-              loading="lazy"
-            />
+            <img src={project.image} alt={project.title} />
             <h3>{project.title}</h3>
             <p>{project.description}</p>
           </article>
