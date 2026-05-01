@@ -1,35 +1,50 @@
 ---
-import Header from "../components/Header.astro";
-import Hero from "../components/Hero.astro";
-import About from "../components/About.astro";
-import Projects from "../components/Projects.astro";
-import Experience from "../components/Experience.astro";
-import Education from "../components/Education.astro";
-import Footer from "../components/Footer.astro";
-
-import "../styles/global.css";
+const projects = [
+  {
+    title: "Fraud Analysis",
+    image: "/projects/fraud-analysis.png",
+    description: "Fraud analysis dashboard with insights and metrics",
+  },
+  {
+    title: "Financial Performance",
+    image: "/projects/financial-performance.png",
+    description: "Financial performance and sales analysis dashboard",
+  },
+  {
+    title: "Sales Analysis",
+    image: "/projects/sales.png",
+    description: "Sales analysis dashboard and KPIs",
+  },
+];
 ---
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Michael Maher</title>
-    <meta name="description" content="Data and Financial Analyst Portfolio" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Michael Maher – Portfolio</title>
+    <meta name="description" content="Portfolio projects by Michael Maher" />
   </head>
 
-  <body class="bg-slate-900 text-gray-200 antialiased">
-    <Header />
-
+  <body>
     <main>
-      <Hero />
-      <About />
-      <Projects />
-      <Experience />
-      <Education />
-    </main>
+      <h1>Projects</h1>
 
-    <Footer />
+      <section>
+        {projects.map((project) => (
+          <article>
+            <h2>{project.title}</h2>
+            <img
+              src={project.image}
+              alt={project.title}
+              style="max-width: 100%; height: auto;"
+            />
+            <p>{project.description}</p>
+          </article>
+        ))}
+      </section>
+    </main>
   </body>
 </html>
+``
