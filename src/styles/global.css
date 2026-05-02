@@ -1,30 +1,19 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/* Base font */
+/* Global dark theme fix */
+html,
 body {
-  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background-color: #020617; /* slate-950 */
+  color: #e5e7eb; /* gray-200 */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont;
 }
 
-/* Fade-up animation */
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Animation utility */
-.animate-fade-up {
-  animation: fadeUp 0.8s ease-out both;
-}
-
-/* Respect users who prefer reduced motion */
-@media (prefers-reduced-motion: reduce) {
-  .animate-fade-up {
-    animation: none;
-  }
+/* Smooth rendering */
+* {
+  box-sizing: border-box;
 }
