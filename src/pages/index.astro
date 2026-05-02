@@ -1,57 +1,38 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import About from "../components/About.astro";
+import Projects from "../components/Projects.astro";
+import Experience from "../components/Experience.astro";
+import Education from "../components/Education.astro";
+import Footer from "../components/Footer.astro";
 
-const projects = [
-  {
-    title: "Fraud Analysis",
-    image: "/projects/fraud-analysis.png",
-    description: "Fraud analysis dashboard with insights and metrics",
-  },
-  {
-    title: "Financial Performance",
-    image: "/projects/financial-performance.png",
-    description: "Financial performance and sales analysis dashboard",
-  },
-  {
-    title: "Sales Analysis",
-    image: "/projects/sales.png",
-    description: "Sales analysis dashboard and KPIs",
-  },
-];
+import "../styles/global.css";
 ---
 
-<Layout>
-  <section id="hero">
-    <h1>Michael Maher</h1>
-    <p>Data Analyst & Business Intelligence Specialist</p>
-  </section>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Michael Maher</title>
+    <meta
+      name="description"
+      content="Michael Maher – Data Analyst and Financial Analyst portfolio"
+    />
+  </head>
 
-  <section id="about">
-    <h2>About</h2>
-    <p>
-      Data Analyst experienced in dashboards, reporting, and data-driven
-      insights.
-    </p>
-  </section>
+  <body class="bg-slate-950 text-gray-200 antialiased">
+    <Header />
 
-  <section id="education">
-    <h2>Education</h2>
-    <ul>
-      <li>Bachelor’s Degree in Business / Information Systems</li>
-      <li>Business Intelligence & Data Analytics Training</li>
-    </ul>
-  </section>
+    <main>
+      <Hero />
+      <About />
+      <Projects />
+      <Experience />
+      <Education />
+    </main>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-      {projects.map((project) => (
-        <article class="project-card">
-          <img src={project.image} alt={project.title} />
-          <h3>{project.title}</h3>
-          <p>{project.description}</p>
-        </article>
-      ))}
-    </div>
-  </section>
-</Layout>
+    <Footer />
+  </body>
+</html>
