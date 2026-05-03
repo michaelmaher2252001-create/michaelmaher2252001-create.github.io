@@ -2,24 +2,19 @@
 import siteConfig from "../config.ts";
 ---
 
-<footer class="py-10 bg-slate-950 text-gray-400">
-  <div class="max-w-6xl mx-auto px-6 text-center">
-    <p class="text-sm">
-      © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
+<header class="w-full px-6 py-4 flex items-center justify-between bg-slate-950 text-gray-200">
+  <div>
+    <h1 class="text-lg font-semibold">
+      {siteConfig.name}
+    </h1>
+    <p class="text-sm text-gray-400">
+      {siteConfig.role}
     </p>
-
-    <div class="mt-4 flex justify-center gap-6 text-sm">
-      {"mailto:" + siteConfig.socials.email}
-        Email
-      </a>
-
-      {siteConfig.socials.github}
-        GitHub
-      </a>
-
-      {siteConfig.socials.linkedin}
-        LinkedIn
-      </a>
-    </div>
   </div>
-</footer>
+
+  <nav class="flex gap-4 text-sm">
+    <a href="https://wa.me/201013559339" target="_blank">WhatsApp</a>
+    <a href={`mailto:${siteConfig.socials.email}`}>Email</a>
+    <a href={siteConfig.socials.linkedin} target="_blank">LinkedIn</a>
+  </nav>
+</header>
