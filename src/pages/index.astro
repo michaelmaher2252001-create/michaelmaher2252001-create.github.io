@@ -1,6 +1,5 @@
 ---
-/* Defensive fix to stop Astro runtime error */
-const siteConfig = {};
+import siteConfig from "../config.ts";
 
 import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
@@ -18,11 +17,8 @@ import "../styles/global.css";
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Michael Maher</title>
-    <meta
-      name="description"
-      content="Michael Maher – Data Analyst and Financial Analyst portfolio"
-    />
+    <title>{siteConfig.title}</title>
+    <meta name="description" content={siteConfig.description} />
   </head>
 
   <body class="bg-slate-950 text-gray-200 antialiased">
@@ -30,3 +26,12 @@ import "../styles/global.css";
 
     <main>
       <Hero />
+      <About />
+      <Projects />
+      <Experience />
+      <Education />
+    </main>
+
+    <Footer />
+  </body>
+</html>
