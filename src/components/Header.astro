@@ -1,38 +1,16 @@
 ---
-import Header from "../components/Header.astro";
-import Hero from "../components/Hero.astro";
-import About from "../components/About.astro";
-import Projects from "../components/Projects.astro";
-import Experience from "../components/Experience.astro";
-import Education from "../components/Education.astro";
-import Footer from "../components/Footer.astro";
-
-import "../styles/global.css";
+import siteConfig from "../config.ts";
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Michael Maher</title>
-    <meta
-      name="description"
-      content="Michael Maher – Data Analyst and Financial Analyst portfolio"
-    />
-  </head>
+<header class="w-full px-6 py-4 flex items-center justify-between bg-slate-950 text-gray-200">
+  <div>
+    <h1 class="text-lg font-semibold">{siteConfig.name}</h1>
+    <p class="text-sm text-gray-400">{siteConfig.role}</p>
+  </div>
 
-  <body class="bg-slate-950 text-gray-200 antialiased">
-    <Header />
-
-    <main>
-      <Hero />
-      <About />
-      <Projects />
-      <Experience />
-      <Education />
-    </main>
-
-    <Footer />
-  </body>
-</html>
+  <nav class="flex gap-4 text-sm">
+    <a href="https://wa.me/201013559339">WhatsApp</a>
+    <a href={`mailto:${siteConfig.socials.email}`}>Email</a>
+    <a href={siteConfig.socials.linkedin}>LinkedIn</a>
+  </nav>
+</header>
