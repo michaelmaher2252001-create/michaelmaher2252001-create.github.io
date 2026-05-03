@@ -2,15 +2,23 @@
 import siteConfig from "../config.ts";
 ---
 
-<header class="w-full px-6 py-4 flex items-center justify-between bg-slate-950 text-gray-200">
+<header class="w-full px-6 py-4 flex justify-between items-center bg-slate-950">
   <div>
     <h1 class="text-lg font-semibold">{siteConfig.name}</h1>
     <p class="text-sm text-gray-400">{siteConfig.role}</p>
   </div>
 
   <nav class="flex gap-4 text-sm">
-    <a href="https://wa.me/201013559339">WhatsApp</a>
-    <a href={`mailto:${siteConfig.socials.email}`}>Email</a>
-    <a href={siteConfig.socials.linkedin}>LinkedIn</a>
+    https://wa.me/201013559339
+      WhatsApp
+    </a>
+
+    {`mailto:${siteConfig.socials.email}`}
+      Email
+    </a>
+
+    {siteConfig.socials.linkedin}
+      LinkedIn
+    </a>
   </nav>
 </header>
