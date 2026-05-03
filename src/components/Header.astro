@@ -1,11 +1,4 @@
 ---
-/* HARD STOP FIX:
-   Define siteConfig in the page scope AND on globalThis
-   so ANY stale reference during build cannot crash Astro.
-*/
-const siteConfig = {};
-globalThis.siteConfig = siteConfig;
-
 import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
 import About from "../components/About.astro";
