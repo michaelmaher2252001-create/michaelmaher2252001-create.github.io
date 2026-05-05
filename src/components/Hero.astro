@@ -2,8 +2,10 @@
 import siteConfig from "../config.ts";
 ---
 
-<section class="px-6 py-28 max-w-6xl mx-auto text-center bg-slate-950">
-  <p class="text-lg text-gray-400 mb-4">
+<section class="px-6 py-32 max-w-6xl mx-auto text-center
+               bg-gradient-to-b from-slate-950 via-slate-900 to-slate-900">
+
+  <p class="text-xl text-gray-400 mb-4">
     Hello! 👋
   </p>
 
@@ -11,16 +13,30 @@ import siteConfig from "../config.ts";
     I'm {siteConfig.name}
   </h1>
 
-  <p class="text-lg sm:text-xl text-gray-400 mb-10">
+  <p class="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto mb-12">
     {siteConfig.role}
   </p>
 
   <!-- CONTACT LINKS -->
   <div class="flex justify-center gap-8 mb-12 text-gray-300 text-sm">
 
-    <a
-      href="https://wa.me/201013559339"
-      target="_blank"
-      class="flex items-center gap-2 hover:text-green-400 transition"
-    >
+    https://wa.me/201013559339
       ✅ WhatsApp Me
+    </a>
+
+    {`mailto:${siteConfig.socials.email}`}
+      ✉ Email
+    </a>
+
+    {siteConfig.socials.linkedin}
+      🔗 LinkedIn
+    </a>
+
+  </div>
+
+  <!-- DOWNLOAD CV -->
+  /Michael_Maher_CV.pdf
+    Download CV
+  </a>
+
+</section>
