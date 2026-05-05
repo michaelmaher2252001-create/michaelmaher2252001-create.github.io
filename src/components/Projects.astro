@@ -1,10 +1,10 @@
 ---
 import siteConfig from "../config.ts";
-const projects = siteConfig.projects || [];
+const projects = siteConfig.projects ?? [];
 ---
 
 <section class="max-w-5xl mx-auto px-6 py-32">
-  <h2 class="text-2xl text-white font-medium mb-16">
+  <h2 class="text-2xl font-medium text-white mb-16">
     Selected Projects
   </h2>
 
@@ -26,11 +26,12 @@ const projects = siteConfig.projects || [];
         </ul>
 
         {project.href && (
-          {project.href}
-            View details →
+          
+            View project →
           </a>
         )}
       </div>
     ))}
   </div>
 </section>
+``
