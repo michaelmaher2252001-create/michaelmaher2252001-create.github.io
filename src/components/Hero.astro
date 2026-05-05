@@ -2,41 +2,52 @@
 import siteConfig from "../config.ts";
 ---
 
-<section class="px-6 py-32 max-w-6xl mx-auto text-center
-               bg-gradient-to-b from-slate-950 via-slate-900 to-slate-900">
-
+<section
+  class="px-6 py-36 max-w-6xl mx-auto text-center
+         bg-gradient-to-b from-slate-950 via-slate-900 to-slate-900"
+>
   <p class="text-xl text-gray-400 mb-4">
     Hello! 👋
   </p>
 
-  <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6">
+  <h1
+    class="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight"
+  >
     I'm {siteConfig.name}
   </h1>
 
-  <p class="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto mb-12">
+  <p
+    class="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto mb-14"
+  >
     {siteConfig.role}
   </p>
 
   <!-- CONTACT LINKS -->
-  <div class="flex justify-center gap-8 mb-12 text-gray-300 text-sm">
-
+  <div
+    class="flex justify-center flex-wrap gap-6 mb-14
+           text-gray-300 text-sm"
+  >
     https://wa.me/201013559339
-      ✅ WhatsApp Me
+      <span class="hover:text-green-400 transition">
+        WhatsApp
+      </span>
     </a>
 
     {`mailto:${siteConfig.socials.email}`}
-      ✉ Email
+      <span class="hover:text-white transition">
+        Email
+      </span>
     </a>
 
     {siteConfig.socials.linkedin}
-      🔗 LinkedIn
+      <span class="hover:text-blue-400 transition">
+        LinkedIn
+      </span>
     </a>
-
   </div>
 
   <!-- DOWNLOAD CV -->
   /Michael_Maher_CV.pdf
     Download CV
   </a>
-
 </section>
