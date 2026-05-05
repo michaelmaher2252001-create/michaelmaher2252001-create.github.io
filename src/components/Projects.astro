@@ -26,7 +26,12 @@ const projects = siteConfig.projects ?? [];
         </ul>
 
         {project.href && (
-          
+          <a
+            href={project.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-sm text-blue-400 hover:underline"
+          >
             View project →
           </a>
         )}
@@ -34,4 +39,3 @@ const projects = siteConfig.projects ?? [];
     ))}
   </div>
 </section>
-``
