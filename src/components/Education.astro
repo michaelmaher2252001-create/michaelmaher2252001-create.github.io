@@ -1,33 +1,36 @@
 ---
 import siteConfig from "../config.ts";
-
 const education = siteConfig.education || [];
 ---
 
-<section class="py-24 bg-slate-900" id="education">
-  <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl font-bold text-white mb-10">
+<section class="py-32 bg-slate-800" id="education">
+  <div class="max-w-5xl mx-auto px-6">
+
+    <h2 class="text-2xl font-semibold text-white mb-12 text-center">
       Education
     </h2>
 
     <div class="space-y-8">
       {education.map((item) => (
-        <div class="bg-slate-800 p-6 rounded-lg border border-white/5">
-          <h3 class="text-xl font-semibold text-white">
+        <div class="bg-slate-700 p-7 rounded-xl border border-white/5">
+
+          <h3 class="text-lg text-white mb-1">
             {item.degree}
           </h3>
 
-          <p class="text-gray-400 text-sm">
+          <p class="text-sm text-gray-400 mb-3">
             {item.school} • {item.dateRange}
           </p>
 
-          <ul class="list-disc list-inside mt-3 text-gray-300 space-y-1">
+          <ul class="text-gray-300 text-sm space-y-1">
             {item.achievements.map((point) => (
-              <li>{point}</li>
+              <li>• {point}</li>
             ))}
           </ul>
+
         </div>
       ))}
     </div>
+
   </div>
 </section>
