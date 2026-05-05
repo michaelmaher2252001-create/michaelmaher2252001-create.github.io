@@ -1,4 +1,6 @@
 ---
+import "../styles/global.css";   // ✅ THIS WAS MISSING
+
 import Hero from "../components/Hero.astro";
 import About from "../components/About.astro";
 import Projects from "../components/Projects.astro";
@@ -14,7 +16,7 @@ import Education from "../components/Education.astro";
     <title>Michael Maher</title>
   </head>
 
-  <body class="bg-slate-950 text-gray-200 antialiased">
+  <body class="antialiased">
     <main>
       <Hero />
       <About />
@@ -24,4 +26,3 @@ import Education from "../components/Education.astro";
     </main>
   </body>
 </html>
-
