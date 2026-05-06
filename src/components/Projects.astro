@@ -3,58 +3,59 @@ import siteConfig from "../config.ts";
 const projects = siteConfig.projects ?? [];
 ---
 
-<section class="max-w-5xl mx-auto px-6 py-32">
-  <h2 class="text-2xl font-medium text-white mb-16">
-    Selected Projects
-  </h2>
+<section class="bg-white text-slate-900 py-32">
+  <div class="max-w-5xl mx-auto px-6">
 
-  <div class="space-y-24">
+    <h2 class="text-2xl font-medium mb-16">
+      Selected Projects
+    </h2>
 
-    {projects.map((project) => (
-      <div class="text-left">
+    <div class="space-y-20">
 
-        <!-- TITLE -->
-        <h3 class="text-lg text-white mb-3">
-          {project.title}
-        </h3>
+      {projects.map((project) => (
+        <div class="grid md:grid-cols-2 gap-10 items-start">
 
-        <!-- DESCRIPTION -->
-        <p class="text-gray-400 max-w-2xl mb-6">
-          {project.description}
-        </p>
+          <!-- LEFT: TEXT -->
+          <div>
+            <h3 class="text-lg font-medium mb-2">
+              {project.title}
+            </h3>
 
-        <!-- ✅ PREMIUM IMAGE -->
-        {project.image && (
-          <div class="overflow-hidden rounded-xl border border-white/5 mb-8">
-            <img
-              src={project.image}
-              alt={project.title}
-              class="w-full max-w-2xl mx-auto transition duration-500 ease-out hover:scale-105"
-            />
+            <p class="text-sm text-gray-600 mb-4">
+              {project.description}
+            </p>
+
+            <ul class="text-sm text-gray-600 space-y-1 mb-4">
+              {project.insights.map((item) => (
+                <li>• {item}</li>
+              ))}
+            </ul>
+
+            {project.href && (
+              <a
+                href={project.href}
+                target="_blank"
+                class="text-sm text-blue-600 hover:underline"
+              >
+                View project →
+              </a>
+            )}
           </div>
-        )}
 
-        <!-- INSIGHTS -->
-        <ul class="list-disc list-inside text-sm text-gray-400 space-y-1 mb-5">
-          {project.insights.map((item) => (
-            <li>{item}</li>
-          ))}
-        </ul>
+          <!-- RIGHT: SMALL PREVIEW IMAGE -->
+          <div>
+            {project.image && (
+              <img
+                src={project.image}
+                alt={project.title}
+                class="w-full max-w-sm rounded-md border border-gray-200"
+              />
+            )}
+          </div>
 
-        <!-- LINK -->
-        {project.href && (
-          <a
-            href={project.href}
-            target="_blank"
-            class="text-gray-400 hover:text-white transition"
-          >
-            View project →
-          </a>
-        )}
+        </div>
+      ))}
 
-      </div>
-    ))}
-
+    </div>
   </div>
 </section>
-``
