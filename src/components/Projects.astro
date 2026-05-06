@@ -8,34 +8,49 @@ const projects = siteConfig.projects ?? [];
     Selected Projects
   </h2>
 
-  <div class="space-y-16">
+  <div class="space-y-20">
     {projects.map((project) => (
       <div>
-        <h3 class="text-lg text-white mb-2">
+
+        <!-- TITLE -->
+        <h3 class="text-lg text-white mb-3">
           {project.title}
         </h3>
 
-        <p class="text-gray-400 max-w-2xl mb-4">
+        <!-- DESCRIPTION -->
+        <p class="text-gray-400 max-w-2xl mb-6">
           {project.description}
         </p>
 
-        <ul class="list-disc list-inside text-gray-400 text-sm space-y-1 mb-4">
+        <!-- ✅ IMAGE -->
+        {project.image && (
+          <img
+            src={project.image}
+            alt={project.title}
+            class="rounded-lg mb-6 w-full max-w-3xl"
+          />
+        )}
+
+        <!-- ✅ INSIGHTS -->
+        <ul class="list-disc list-inside text-sm text-gray-400 space-y-1 mb-5">
           {project.insights.map((item) => (
             <li>{item}</li>
           ))}
         </ul>
 
+        <!-- ✅ LINK -->
         {project.href && (
           <a
             href={project.href}
             target="_blank"
-            rel="noopener noreferrer"
-            class="text-sm text-blue-400 hover:underline"
+            class="text-gray-400 hover:text-white transition"
           >
             View project →
           </a>
         )}
+
       </div>
     ))}
   </div>
 </section>
+``
