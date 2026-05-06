@@ -15,7 +15,7 @@ const projects = siteConfig.projects ?? [];
       {projects.map((project) => (
         <div class="grid md:grid-cols-2 gap-10 items-start">
 
-          <!-- LEFT: TEXT -->
+          <!-- TEXT -->
           <div>
             <h3 class="text-lg font-medium mb-2">
               {project.title}
@@ -35,20 +35,20 @@ const projects = siteConfig.projects ?? [];
               <a
                 href={project.href}
                 target="_blank"
-                class="text-sm text-blue-600 hover:underline"
+                class="text-gray-600 hover:text-black transition"
               >
                 View project →
               </a>
             )}
           </div>
 
-          <!-- RIGHT: SMALL PREVIEW IMAGE -->
+          <!-- ✅ SMALL PREVIEW IMAGE -->
           <div>
             {project.image && (
               <img
                 src={project.image}
                 alt={project.title}
-                class="w-full max-w-sm rounded-md border border-gray-200"
+                class="w-full max-w-md mx-auto rounded-lg shadow-sm"
               />
             )}
           </div>
