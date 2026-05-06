@@ -23,3 +23,35 @@ const projects = siteConfig.projects ?? [];
           {project.description}
         </p>
 
+        <!-- ✅ IMAGE -->
+        {project.image && (
+          <img
+            src={project.image}
+            alt={project.title}
+            class="w-full max-w-3xl mx-auto rounded-lg mb-6"
+          />
+        )}
+
+        <!-- INSIGHTS -->
+        <ul class="list-disc list-inside text-sm text-gray-400 space-y-1 mb-4">
+          {project.insights.map((item) => (
+            <li>{item}</li>
+          ))}
+        </ul>
+
+        <!-- ✅ CORRECT LINK -->
+        {project.href && (
+          <a
+            href={project.href}
+            target="_blank"
+            class="text-gray-400 hover:text-white transition"
+          >
+            View project →
+          </a>
+        )}
+
+      </div>
+    ))}
+
+  </div>
+</section>
