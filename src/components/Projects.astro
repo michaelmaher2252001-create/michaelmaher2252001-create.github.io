@@ -1,4 +1,6 @@
 ---
+// rebuild trigger
+
 import siteConfig from "../config.ts";
 const projects = siteConfig.projects ?? [];
 ---
@@ -39,7 +41,7 @@ const projects = siteConfig.projects ?? [];
           ))}
         </ul>
 
-        <!-- ✅ CORRECT LINK -->
+        <!-- ✅ LINK -->
         {project.href && (
           <a
             href={project.href}
@@ -55,3 +57,4 @@ const projects = siteConfig.projects ?? [];
 
   </div>
 </section>
+``
