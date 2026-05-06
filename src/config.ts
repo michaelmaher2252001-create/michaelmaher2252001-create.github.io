@@ -20,6 +20,7 @@ const projects = [
     ],
     href: "https://github.com/michaelmaher2252001-create/Fraud-Detection-Risk-Monitoring",
   },
+
   {
     title: "Financial Performance & Variance Analysis",
     description:
@@ -37,6 +38,7 @@ const projects = [
     ],
     href: "https://github.com/michaelmaher2252001-create/Financial-Performance-Variance-Analysis",
   },
+
   {
     title: "Sales Performance & Profitability Analysis",
     description:
@@ -53,7 +55,7 @@ const projects = [
       "Improved focus on high-performing markets and products",
     ],
     href: "https://github.com/michaelmaher2252001-create/Sales-Performance-Profitability-Analysis",
-  },
+  }
 ];
 
 // ==========================
@@ -106,3 +108,4 @@ const siteConfig = {
 };
 
 export default siteConfig;
+``
