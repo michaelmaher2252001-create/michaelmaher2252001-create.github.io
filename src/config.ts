@@ -1,61 +1,65 @@
-// ==========================
+   // ==========================
 // PROJECTS DATA
 // ==========================
 
 const projects = [
   {
     title: "Fraud Detection & Risk Monitoring",
+    category: "Risk Analytics Dashboard",
+    tools: ["Power BI", "DAX", "Data Modeling", "Risk Analysis"],
     description:
-      "Power BI dashboard monitoring fraudulent transactions across payment channels and geographic regions.",
+      "An interactive Power BI dashboard designed to monitor fraudulent transactions across payment channels, regions, and time periods.",
     image: "/projects/Fraud analysis.png",
     insights: [
-      "Detected unusual transaction patterns across specific regions",
-      "Identified high-risk payment channels with elevated fraud rates",
-      "Highlighted time periods with increased fraud activity",
+      "Detected unusual transaction behavior across specific regions.",
+      "Identified high-risk payment channels with elevated fraud activity.",
+      "Highlighted peak periods where fraud cases increased noticeably.",
     ],
     impact: [
-      "Supported fraud risk monitoring and investigation efforts",
-      "Improved visibility into high-risk transactions",
-      "Enabled faster identification of fraud-prone areas",
+      "Improved visibility into risky transactions.",
+      "Supported fraud monitoring and investigation workflows.",
+      "Helped identify fraud-prone areas faster.",
     ],
     href: "https://github.com/michaelmaher2252001-create/Fraud-Detection-Risk-Monitoring",
   },
-
   {
     title: "Financial Performance & Variance Analysis",
+    category: "Financial Analysis",
+    tools: ["Power BI", "Excel", "Variance Analysis", "Financial Reporting"],
     description:
-      "Analysis of actual versus target performance to identify revenue, cost, and profitability variances.",
+      "A financial analysis project comparing actual performance against targets to uncover revenue, cost, and profitability variances.",
     image: "/projects/financial-performance.png",
     insights: [
-      "Identified unfavorable variances between actual and target performance",
-      "Highlighted cost drivers impacting profitability",
-      "Detected segments consistently underperforming targets",
+      "Identified unfavorable gaps between actual and target performance.",
+      "Highlighted cost drivers affecting profitability.",
+      "Detected underperforming segments that required management attention.",
     ],
     impact: [
-      "Supported performance review and planning discussions",
-      "Improved understanding of variance drivers",
-      "Enabled more informed financial decision-making",
+      "Supported financial planning and performance review discussions.",
+      "Improved understanding of key variance drivers.",
+      "Enabled more informed financial decision-making.",
     ],
     href: "https://github.com/michaelmaher2252001-create/Financial-Performance-Variance-Analysis",
   },
-
   {
     title: "Sales Performance & Profitability Analysis",
+    category: "Sales Analytics Dashboard",
+    tools: ["Power BI", "DAX", "Profitability Analysis", "KPI Reporting"],
     description:
-      "Power BI dashboard analyzing sales trends, cost structure, and profit margins across regions and time periods.",
+      "A Power BI dashboard analyzing sales trends, cost structure, and profit margins across regions, products, and time periods.",
     image: "/projects/sales.png",
     insights: [
-      "Top-performing regions contributed the majority of total sales",
-      "COGS growth reduced profitability in specific markets",
-      "Clear seasonal sales patterns observed across the year",
+      "Top-performing regions contributed the majority of total sales.",
+      "COGS growth reduced profitability in selected markets.",
+      "Clear seasonal sales patterns appeared across the year.",
     ],
     impact: [
-      "Highlighted margin pressure areas for management review",
-      "Supported pricing and cost optimization discussions",
-      "Improved focus on high-performing markets and products",
+      "Highlighted margin pressure areas for management review.",
+      "Supported pricing and cost optimization discussions.",
+      "Improved focus on high-performing markets and products.",
     ],
     href: "https://github.com/michaelmaher2252001-create/Sales-Performance-Profitability-Analysis",
-  }
+  },
 ];
 
 // ==========================
@@ -63,13 +67,43 @@ const projects = [
 // ==========================
 
 const siteConfig = {
-  title: "Michael Maher",
+  title: "Michael Maher | Data & Financial Analyst",
   description:
-    "Data and Financial Analyst focused on financial performance analysis, profitability, and dashboard-driven business insights.",
+    "Portfolio of Michael Maher, a Data and Financial Analyst focused on Power BI dashboards, financial performance analysis, profitability insights, and business decision support.",
 
   name: "Michael Maher",
   role: "Data Analyst | Financial Analyst",
   location: "Cairo, Egypt",
+
+  hero: {
+    eyebrow: "Data & Financial Analyst",
+    headline:
+      "Turning financial and business data into clear, actionable insights.",
+    subheadline:
+      "I build analytical dashboards and financial reports that help businesses understand performance, monitor risk, and make better decisions.",
+    primaryCTA: "View Projects",
+    secondaryCTA: "Contact Me",
+  },
+
+  about:
+    "I am a Data and Financial Analyst with a background in accounting, finance, and business administration. I focus on transforming raw data into meaningful dashboards, financial insights, and performance reports using tools such as Power BI, Excel, SQL, and DAX.",
+
+  skills: {
+    analytics: ["Power BI", "Excel", "SQL", "DAX", "Power Query"],
+    finance: [
+      "Financial Analysis",
+      "Variance Analysis",
+      "Profitability Analysis",
+      "KPI Reporting",
+      "Business Performance Review",
+    ],
+    business: [
+      "Dashboard Design",
+      "Data Storytelling",
+      "Insight Generation",
+      "Decision Support",
+    ],
+  },
 
   socials: {
     email: "michael.maher225200@gmail.com",
@@ -80,26 +114,23 @@ const siteConfig = {
   education: [
     {
       degree: "Bachelor of Commerce",
-      school: "Faculty of Commerce (English Section), Helwan University",
+      school: "Faculty of Commerce, English Section, Helwan University",
       dateRange: "2019 – 2023",
       achievements: [
-        "Major in Accounting, Finance, and Business Administration",
-        "Strong foundation in financial analysis, reporting, and business decision-making",
-        "Graduated in 2023",
+        "Major in Accounting, Finance, and Business Administration.",
+        "Built a strong foundation in financial reporting, analysis, and business decision-making.",
+        "Graduated in 2023.",
       ],
     },
     {
-      degree: "Microsoft Learn – Data Analytics & Power BI Learning Paths",
+      degree: "Data Analytics & Power BI Learning Paths",
       school: "Microsoft Learn",
       dateRange: "2024 – Present",
       achievements: [
-        "Get started with Microsoft Data Analytics",
-        "Prepare data for analysis with Power BI",
-        "Model data using Power BI",
-        "Use DAX in semantic models",
-        "Design effective Power BI reports and dashboards",
-        "Manage and secure Power BI environments",
-        "Query and modify data using Transact-SQL (T-SQL)",
+        "Preparing, modeling, and visualizing data with Power BI.",
+        "Using DAX to create measures and analytical models.",
+        "Designing effective reports and dashboards.",
+        "Querying and modifying data using T-SQL.",
       ],
     },
   ],
@@ -108,4 +139,3 @@ const siteConfig = {
 };
 
 export default siteConfig;
-``
