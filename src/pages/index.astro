@@ -1,11 +1,13 @@
 ---
 import "../styles/global.css";
 
+import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
 import About from "../components/About.astro";
 import Projects from "../components/Projects.astro";
 import Experience from "../components/Experience.astro";
 import Education from "../components/Education.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <!DOCTYPE html>
@@ -13,40 +15,11 @@ import Education from "../components/Education.astro";
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <title>Michael Maher | Data & Financial Analyst</title>
-    <meta
-      name="description"
-      content="Portfolio of Michael Maher, a Data and Financial Analyst focused on Power BI dashboards, financial performance analysis, profitability insights, and business decision support."
-    />
-
-    <meta property="og:title" content="Michael Maher | Data & Financial Analyst" />
-    <meta
-      property="og:description"
-      content="Power BI dashboards, financial analysis, profitability insights, and business reporting projects."
-    />
-    <meta property="og:type" content="website" />
   </head>
 
   <body>
-    <header class="fixed top-4 left-1/2 z-50 w-[min(920px,calc(100%-32px))] -translate-x-1/2">
-      <nav class="card flex items-center justify-between px-5 py-3">
-        <a href="#" class="text-sm font-bold text-white">
-          Michael Maher
-        </a>
-
-        <div class="hidden md:flex items-center gap-6 text-sm text-slate-400">
-          <a href="#about" class="hover:text-white transition">About</a>
-          <a href="#projects" class="hover:text-white transition">Projects</a>
-          <a href="#experience" class="hover:text-white transition">Experience</a>
-          <a href="#education" class="hover:text-white transition">Education</a>
-        </div>
-
-        <a href="mailto:michael.maher225200@gmail.com" class="btn-primary !py-2 !px-4 text-sm">
-          Contact
-        </a>
-      </nav>
-    </header>
+    <Header />
 
     <main>
       <Hero />
@@ -54,35 +27,8 @@ import Education from "../components/Education.astro";
       <Projects />
       <Experience />
       <Education />
-
-      <footer class="section pt-12">
-        <div class="card p-8 lg:p-10 text-center">
-          <span class="badge mx-auto mb-5">Contact</span>
-
-          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white mb-4">
-            Let’s turn data into better decisions.
-          </h2>
-
-          <p class="text-slate-400 max-w-2xl mx-auto mb-8 leading-7">
-            Open to data analysis, financial analysis, dashboard development,
-            and business reporting opportunities.
-          </p>
-
-          <div class="flex flex-wrap justify-center gap-4">
-            <a href="mailto:michael.maher225200@gmail.com" class="btn-primary">
-              Email Me
-            </a>
-
-            <a href="https://www.linkedin.com/in/michael-maher-3104ab216" target="_blank" class="btn-secondary">
-              LinkedIn
-            </a>
-
-            <a href="https://github.com/michaelmaher2252001-create" target="_blank" class="btn-secondary">
-              GitHub
-            </a>
-          </div>
-        </div>
-      </footer>
     </main>
+
+    <Footer />
   </body>
 </html>
