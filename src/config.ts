@@ -1,4 +1,10 @@
 const siteConfig = {
+  email: "michael.maher225200@gmail.com",
+
+  linkedin: "https://www.linkedin.com/in/michael-maher-3104ab216",
+
+  github: "https://github.com/michaelmaher2252001-create",
+
   projects: [
     {
       category: "Risk Analytics Dashboard",
