@@ -1,10 +1,15 @@
+---
+import siteConfig from "../config.ts";
+
+const projects = siteConfig.projects ?? [];
+---
+
 <section id="projects" class="projects-section">
 
   <div class="projects-glow"></div>
 
   <div class="projects-container">
 
-    <!-- HEADING -->
     <div class="projects-heading">
 
       <span class="projects-badge">
@@ -24,73 +29,72 @@
 
     </div>
 
-    <!-- PROJECT CARD -->
-    <div class="project-card">
+    <div class="projects-list">
+      {projects.map((project) => (
+        <article class="project-card">
 
-      <div class="project-tag">
-        Risk Analytics Dashboard
-      </div>
+          <div class="project-content">
 
-      <h3>
-        Fraud Detection & Risk Monitoring
-      </h3>
+            <div class="project-tag">
+              {project.category}
+            </div>
 
-      <p class="project-description">
-        An interactive Power BI dashboard designed to monitor fraudulent
-        transactions across payment channels, regions, and time periods.
-      </p>
+            <h3>
+              {project.title}
+            </h3>
 
-      <!-- TECH -->
-      <div class="tech-stack">
+            <p class="project-description">
+              {project.description}
+            </p>
 
-        <span>Power BI</span>
-        <span>Data Modeling</span>
-        <span>Risk Analysis</span>
+            {project.tags && (
+              <div class="tech-stack">
+                {project.tags.map((tag) => (
+                  <span>{tag}</span>
+                ))}
+              </div>
+            )}
 
-      </div>
+            {project.insights && (
+              <div class="project-section">
+                <h4>Key Insights</h4>
 
-      <!-- INSIGHTS -->
-      <div class="project-section">
+                <ul>
+                  {project.insights.map((item) => (
+                    <li>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
 
-        <h4>Key Insights</h4>
+            {project.impact && (
+              <div class="project-section">
+                <h4>Business Impact</h4>
 
-        <ul>
-          <li>
-            Detected unusual transaction behavior across specific regions.
-          </li>
+                <ul>
+                  {project.impact.map((item) => (
+                    <li>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
 
-          <li>
-            Identified high-risk payment channels with elevated fraud activity.
-          </li>
+            {project.href && (
+              <a href={project.href} target="_blank" class="project-link">
+                View Project →
+              </a>
+            )}
 
-          <li>
-            Highlighted peak periods where fraud cases increased noticeably.
-          </li>
-        </ul>
+          </div>
 
-      </div>
+          {project.image && (
+            <div class="project-image-wrap">
+              <img src={project.image} alt={project.title} class="project-image" />
+            </div>
+          )}
 
-      <!-- IMPACT -->
-      <div class="project-section">
-
-        <h4>Business Impact</h4>
-
-        <ul>
-          <li>
-            Improved visibility into risky transactions.
-          </li>
-
-          <li>
-            Supported fraud monitoring and investigation workflows.
-          </li>
-
-          <li>
-            Helped identify fraud-prone areas faster.
-          </li>
-        </ul>
-
-      </div>
-
+        </article>
+      ))}
     </div>
 
   </div>
@@ -163,12 +167,7 @@
     height: 3px;
     margin: 28px auto;
     border-radius: 999px;
-    background: linear-gradient(
-      90deg,
-      transparent,
-      #22d3ee,
-      transparent
-    );
+    background: linear-gradient(90deg, transparent, #22d3ee, transparent);
     box-shadow: 0 0 30px rgba(34, 211, 238, 0.75);
   }
 
@@ -180,90 +179,116 @@
     line-height: 1.9;
   }
 
+  .projects-list {
+    display: grid;
+    gap: 42px;
+  }
+
   .project-card {
-    position: relative;
-    padding: 42px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 34px;
+    padding: 38px;
     border-radius: 36px;
-    background:
-      linear-gradient(
-        145deg,
-        rgba(15, 23, 42, 0.9),
-        rgba(15, 23, 42, 0.55)
-      );
-
-    backdrop-filter: blur(24px);
-
+    background: linear-gradient(145deg, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.55));
     box-shadow:
       0 30px 90px rgba(0, 0, 0, 0.35),
       inset 0 1px 0 rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(24px);
+    transition: 0.25s ease;
+  }
+
+  .project-card:hover {
+    transform: translateY(-6px);
   }
 
   .project-tag {
     display: inline-flex;
-    padding: 12px 22px;
+    padding: 10px 18px;
     border-radius: 999px;
     background: rgba(34, 211, 238, 0.1);
     color: #22d3ee;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
   }
 
   .project-card h3 {
     margin: 0;
     color: white;
-    font-size: 42px;
-    line-height: 1.1;
+    font-size: 34px;
+    line-height: 1.12;
     font-weight: 900;
     letter-spacing: -0.04em;
   }
 
   .project-description {
-    margin-top: 28px;
+    margin-top: 22px;
     color: #cbd5e1;
-    font-size: 18px;
-    line-height: 1.9;
+    font-size: 17px;
+    line-height: 1.8;
     max-width: 900px;
   }
 
   .tech-stack {
     display: flex;
     flex-wrap: wrap;
-    gap: 14px;
-    margin-top: 34px;
+    gap: 12px;
+    margin-top: 26px;
   }
 
   .tech-stack span {
-    padding: 12px 18px;
+    padding: 10px 16px;
     border-radius: 999px;
     background: rgba(255, 255, 255, 0.04);
     color: #cbd5e1;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
   }
 
   .project-section {
-    margin-top: 48px;
+    margin-top: 32px;
   }
 
   .project-section h4 {
-    margin: 0 0 24px;
+    margin: 0 0 16px;
     color: white;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 900;
-    letter-spacing: -0.03em;
   }
 
   .project-section ul {
     margin: 0;
-    padding-left: 24px;
+    padding-left: 22px;
   }
 
   .project-section li {
     color: #cbd5e1;
-    font-size: 17px;
-    line-height: 2;
-    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 1.9;
+  }
+
+  .project-link {
+    display: inline-flex;
+    margin-top: 34px;
+    padding: 14px 22px;
+    border-radius: 999px;
+    background: #22d3ee;
+    color: #031018;
+    font-weight: 800;
+    text-decoration: none;
+  }
+
+  .project-image-wrap {
+    overflow: hidden;
+    border-radius: 26px;
+    background: rgba(255, 255, 255, 0.04);
+  }
+
+  .project-image {
+    width: 100%;
+    display: block;
+    object-fit: cover;
   }
 
   @media (max-width: 768px) {
@@ -276,7 +301,7 @@
     }
 
     .projects-title {
-      font-size: 2.5rem;
+      font-size: 2.4rem;
     }
 
     .project-card {
@@ -284,7 +309,7 @@
     }
 
     .project-card h3 {
-      font-size: 32px;
+      font-size: 30px;
     }
   }
 </style>
