@@ -1,44 +1,133 @@
----
-import siteConfig from "../config.ts";
-const education = siteConfig.education ?? [];
----
+<section id="education" class="py-28 px-6">
+  <div class="max-w-6xl mx-auto">
 
-<section class="section" id="education">
-  <div class="mb-14">
-    <span class="badge mb-5">Education</span>
+    <!-- TITLE -->
+    <div class="text-center mb-20">
 
-    <h2 class="section-title">
-      Finance education strengthened with modern analytics training.
-    </h2>
-  </div>
+      <span class="inline-flex px-4 py-2 rounded-full bg-purple-400/10 text-purple-400 text-sm font-semibold mb-6">
+        Education
+      </span>
 
-  <div class="grid gap-6">
-    {education.map((item) => (
-      <article class="card p-7 lg:p-8">
-        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
+      <h2 class="text-5xl font-black tracking-tight text-white mb-6">
+        Education & Learning
+      </h2>
+
+      <p class="max-w-3xl mx-auto text-slate-400 text-lg leading-8">
+        Academic background in accounting and finance combined with
+        continuous learning in data analytics, reporting, and business intelligence.
+      </p>
+
+    </div>
+
+    <!-- GRID -->
+    <div class="grid lg:grid-cols-2 gap-8">
+
+      <!-- UNIVERSITY -->
+      <div class="rounded-[32px] bg-white/[0.03] backdrop-blur-2xl p-10 shadow-[0_20px_80px_rgba(0,0,0,0.35)]">
+
+        <div class="flex items-center gap-4 mb-8">
+
+          <div class="w-16 h-16 rounded-3xl bg-green-400/10 flex items-center justify-center text-green-400 text-3xl">
+            🎓
+          </div>
+
           <div>
-            <h3 class="text-xl font-bold text-white">
-              {item.degree}
+            <h3 class="text-3xl font-black text-white">
+              Helwan University
             </h3>
 
-            <p class="text-sky-400 mt-2">
-              {item.school}
+            <p class="text-slate-400 mt-2">
+              Bachelor of Accounting — 2023
             </p>
           </div>
 
-          <span class="text-sm text-slate-400 border border-slate-700 rounded-full px-4 py-2 w-fit">
-            {item.dateRange}
-          </span>
         </div>
 
-        <ul class="grid sm:grid-cols-2 gap-3 text-sm text-slate-400">
-          {item.achievements.map((point) => (
-            <li class="rounded-xl bg-slate-900/70 border border-slate-700/60 p-4 leading-6">
-              {point}
-            </li>
-          ))}
-        </ul>
-      </article>
-    ))}
+        <div class="space-y-5 text-slate-400 leading-8 text-[17px]">
+
+          <p>
+            Graduated from the Faculty of Commerce with a specialization
+            in Accounting, Finance, and Business Administration.
+          </p>
+
+          <p>
+            Built strong foundations in financial reporting,
+            business analysis, accounting systems,
+            and strategic decision-making.
+          </p>
+
+          <p>
+            Academic studies supported analytical thinking,
+            financial interpretation, and problem-solving skills
+            used in reporting and business analytics.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- MICROSOFT -->
+      <div class="rounded-[32px] bg-gradient-to-br from-cyan-500/10 to-transparent backdrop-blur-2xl p-10 shadow-[0_20px_80px_rgba(0,0,0,0.35)]">
+
+        <div class="flex items-center gap-4 mb-8">
+
+          <div class="w-16 h-16 rounded-3xl bg-cyan-400/10 flex items-center justify-center text-cyan-400 text-3xl">
+            📊
+          </div>
+
+          <div>
+            <h3 class="text-3xl font-black text-white">
+              Microsoft Learn
+            </h3>
+
+            <p class="text-slate-400 mt-2">
+              Data Analytics & Power BI Learning Paths
+            </p>
+          </div>
+
+        </div>
+
+        <!-- SKILLS -->
+        <div class="grid gap-4">
+
+          <div class="rounded-2xl bg-slate-900/40 p-5">
+            <h4 class="text-white font-semibold mb-2">
+              Power BI & Visualization
+            </h4>
+
+            <p class="text-slate-400 leading-7">
+              Dashboard creation, report design, KPI tracking,
+              drill-through analysis, and executive visual storytelling.
+            </p>
+          </div>
+
+          <div class="rounded-2xl bg-slate-900/40 p-5">
+            <h4 class="text-white font-semibold mb-2">
+              Data Modeling & DAX
+            </h4>
+
+            <p class="text-slate-400 leading-7">
+              Building semantic models, relationships,
+              DAX calculations, measures, and optimized reporting structures.
+            </p>
+          </div>
+
+          <div class="rounded-2xl bg-slate-900/40 p-5">
+            <h4 class="text-white font-semibold mb-2">
+              SQL & Data Preparation
+            </h4>
+
+            <p class="text-slate-400 leading-7">
+              Querying, transforming, cleaning, and preparing datasets
+              for analytical and reporting workflows.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
   </div>
 </section>
