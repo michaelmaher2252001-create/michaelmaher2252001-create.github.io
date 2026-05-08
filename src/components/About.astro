@@ -1,107 +1,133 @@
 <section id="about" class="about-section">
+
   <div class="about-glow"></div>
 
   <div class="about-container">
 
-    <!-- TITLE -->
-    <div class="about-heading">
-      <h2>
-        About <span>Me</span>
-      </h2>
+```
+<!-- HEADING -->
+<div class="about-heading">
 
-      <div class="heading-line"></div>
+  <span class="about-badge">
+    About Me
+  </span>
 
-      <h3>
-        Turning Data Into <br />
-        Strategic Decisions
-      </h3>
+  <h2>
+    Turning Data Into Strategic Decisions
+  </h2>
 
-      <p>
-        I combine financial knowledge, business understanding, and analytics
-        to transform raw numbers into clear insights for better decisions.
-      </p>
+  <div class="heading-line"></div>
+
+  <p>
+    I combine financial knowledge, business understanding, and analytics
+    to transform raw numbers into clear insights for better decisions.
+  </p>
+
+</div>
+
+<!-- CONTENT -->
+<div class="about-grid">
+
+  <!-- MAIN CARD -->
+  <div class="about-main-card">
+
+    <div class="about-card-icon">
+      👤
     </div>
 
-    <!-- CONTENT -->
-    <div class="about-grid">
+    <h4>
+      Who I Am
+    </h4>
 
-      <!-- LEFT CARD -->
-      <div class="about-main-card">
-        <div class="about-card-icon">
-          👤
-        </div>
+    <div class="mini-line"></div>
 
+    <p>
+      I’m a Data & Financial Analyst based in Cairo with a background in
+      accounting, taxation, financial reporting, and business analytics.
+    </p>
+
+    <p>
+      My experience helps me understand both the financial side and the
+      business side of performance, reporting, and decision-making.
+    </p>
+
+    <p>
+      I focus on building Power BI dashboards, financial reports, and
+      analytical views that make complex data easier to understand.
+    </p>
+
+  </div>
+
+  <!-- SIDE -->
+  <div class="about-side-cards">
+
+    <!-- CARD -->
+    <div class="about-small-card cyan">
+
+      <div class="small-icon">
+        📊
+      </div>
+
+      <div>
         <h4>
-          Who I Am
+          Data Analytics
         </h4>
 
-        <div class="mini-line"></div>
-
         <p>
-          I’m a Data & Financial Analyst based in Cairo with a background in
-          accounting, taxation, financial reporting, and business analytics.
+          Power BI dashboards, KPI reporting, SQL analysis,
+          and Excel-based reporting.
         </p>
-
-        <p>
-          My experience helps me understand both the financial side and the
-          business side of performance, reporting, and decision-making.
-        </p>
-
-        <p>
-          I focus on building Power BI dashboards, financial reports, and
-          analytical views that make complex data easier to understand.
-        </p>
-      </div>
-
-      <!-- RIGHT CARDS -->
-      <div class="about-side-cards">
-
-        <div class="about-small-card cyan">
-          <div class="small-icon">
-            📊
-          </div>
-
-          <div>
-            <h4>Data Analytics</h4>
-            <p>
-              Power BI dashboards, KPI reporting, SQL analysis,
-              and Excel-based reporting.
-            </p>
-          </div>
-        </div>
-
-        <div class="about-small-card green">
-          <div class="small-icon">
-            💰
-          </div>
-
-          <div>
-            <h4>Financial Analysis</h4>
-            <p>
-              Reporting, profitability review, tax exposure,
-              variance analysis, and business evaluation.
-            </p>
-          </div>
-        </div>
-
-        <div class="about-small-card purple">
-          <div class="small-icon">
-            🚀
-          </div>
-
-          <div>
-            <h4>Business Impact</h4>
-            <p>
-              Turning findings into clear recommendations that support
-              decisions and performance improvement.
-            </p>
-          </div>
-        </div>
-
       </div>
 
     </div>
+
+    <!-- CARD -->
+    <div class="about-small-card green">
+
+      <div class="small-icon">
+        💰
+      </div>
+
+      <div>
+        <h4>
+          Financial Analysis
+        </h4>
+
+        <p>
+          Reporting, profitability review, tax exposure,
+          variance analysis, and business evaluation.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- CARD -->
+    <div class="about-small-card purple">
+
+      <div class="small-icon">
+        🚀
+      </div>
+
+      <div>
+        <h4>
+          Business Impact
+        </h4>
+
+        <p>
+          Turning findings into clear recommendations that support
+          decisions and performance improvement.
+        </p>
+      </div>
+
+    </div>
+
   </div>
+
+</div>
+```
+
+  </div>
+
 </section>
 
 <style>
@@ -138,17 +164,25 @@
     margin-bottom: 70px;
   }
 
+  .about-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 999px;
+    background: rgba(34, 211, 238, 0.1);
+    color: #67e8f9;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 26px;
+  }
+
   .about-heading h2 {
     margin: 0;
     color: white;
-    font-size: clamp(3rem, 6vw, 5.8rem);
+    font-size: clamp(3.2rem, 5vw, 4.6rem);
     line-height: 1;
     font-weight: 950;
     letter-spacing: -0.06em;
-  }
-
-  .about-heading h2 span {
-    color: #22d3ee;
   }
 
   .heading-line {
@@ -160,20 +194,11 @@
     box-shadow: 0 0 30px rgba(34, 211, 238, 0.75);
   }
 
-  .about-heading h3 {
-    margin: 0;
-    color: white;
-    font-size: clamp(2rem, 4vw, 3.3rem);
-    line-height: 1.12;
-    font-weight: 900;
-    letter-spacing: -0.04em;
-  }
-
   .about-heading p {
-    max-width: 720px;
+    max-width: 760px;
     margin: 26px auto 0;
     color: #94a3b8;
-    font-size: 17px;
+    font-size: 18px;
     line-height: 1.9;
   }
 
@@ -197,7 +222,6 @@
 
   .about-main-card {
     padding: 44px;
-    min-height: 520px;
   }
 
   .about-card-icon {
@@ -256,29 +280,6 @@
     transform: translateY(-6px);
   }
 
-  .about-small-card::before {
-    content: "";
-    position: absolute;
-    inset: 0 auto 0 0;
-    width: 4px;
-    border-radius: 999px;
-  }
-
-  .about-small-card.cyan::before {
-    background: #22d3ee;
-    box-shadow: 0 0 30px rgba(34, 211, 238, 0.75);
-  }
-
-  .about-small-card.green::before {
-    background: #4ade80;
-    box-shadow: 0 0 30px rgba(74, 222, 128, 0.75);
-  }
-
-  .about-small-card.purple::before {
-    background: #a855f7;
-    box-shadow: 0 0 30px rgba(168, 85, 247, 0.75);
-  }
-
   .small-icon {
     width: 72px;
     height: 72px;
@@ -319,10 +320,6 @@
   @media (max-width: 980px) {
     .about-grid {
       grid-template-columns: 1fr;
-    }
-
-    .about-main-card {
-      min-height: auto;
     }
   }
 
