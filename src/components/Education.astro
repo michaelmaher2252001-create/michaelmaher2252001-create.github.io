@@ -1,125 +1,133 @@
-<section id="education" class="py-28 px-6">
-  <div class="max-w-6xl mx-auto">
+<section id="education" class="education-section">
+  <div class="education-glow"></div>
 
-    <!-- TITLE -->
-    <div class="text-center mb-20">
+  <div class="education-container">
 
-      <span class="inline-flex px-4 py-2 rounded-full bg-purple-400/10 text-purple-400 text-sm font-semibold mb-6">
+    <!-- HEADING -->
+    <div class="education-heading">
+
+      <h2>
         Education
-      </span>
-
-      <h2 class="text-5xl font-black tracking-tight text-white mb-6">
-        Education & Learning
       </h2>
 
-      <p class="max-w-3xl mx-auto text-slate-400 text-lg leading-8">
-        Academic background in accounting and finance combined with
-        continuous learning in data analytics, reporting, and business intelligence.
+      <div class="education-line"></div>
+
+      <h3>
+        Academic Foundation & <br />
+        Continuous Learning
+      </h3>
+
+      <p>
+        A finance and accounting background supported by continuous learning in
+        data analytics, Power BI, SQL, and business intelligence.
       </p>
 
     </div>
 
     <!-- GRID -->
-    <div class="grid lg:grid-cols-2 gap-8">
+    <div class="education-grid">
 
-      <!-- UNIVERSITY -->
-      <div class="rounded-[32px] bg-white/[0.03] backdrop-blur-2xl p-10 shadow-[0_20px_80px_rgba(0,0,0,0.35)]">
+      <!-- MAIN CARD -->
+      <div class="education-main-card">
 
-        <div class="flex items-center gap-4 mb-8">
-
-          <div class="w-16 h-16 rounded-3xl bg-green-400/10 flex items-center justify-center text-green-400 text-3xl">
-            🎓
-          </div>
-
-          <div>
-            <h3 class="text-3xl font-black text-white">
-              Helwan University
-            </h3>
-
-            <p class="text-slate-400 mt-2">
-              Bachelor of Accounting — 2023
-            </p>
-          </div>
-
+        <div class="education-icon">
+          🎓
         </div>
 
-        <div class="space-y-5 text-slate-400 leading-8 text-[17px]">
+        <h4>
+          Helwan University
+        </h4>
 
-          <p>
-            Graduated from the Faculty of Commerce with a specialization
-            in Accounting, Finance, and Business Administration.
-          </p>
+        <span>
+          Bachelor of Accounting — 2023
+        </span>
 
-          <p>
-            Built strong foundations in financial reporting,
-            business analysis, accounting systems,
-            and strategic decision-making.
-          </p>
-
-          <p>
-            Academic studies supported analytical thinking,
-            financial interpretation, and problem-solving skills
-            used in reporting and business analytics.
-          </p>
-
-        </div>
+        <p>
+          Graduated from the Faculty of Commerce with a foundation in accounting,
+          finance, business administration, financial reporting, and business
+          decision-making.
+        </p>
 
       </div>
 
-      <!-- MICROSOFT -->
-      <div class="rounded-[32px] bg-gradient-to-br from-cyan-500/10 to-transparent backdrop-blur-2xl p-10 shadow-[0_20px_80px_rgba(0,0,0,0.35)]">
+      <!-- SIDE CARDS -->
+      <div class="education-side-cards">
 
-        <div class="flex items-center gap-4 mb-8">
+        <!-- CARD -->
+        <div class="education-small-card cyan">
 
-          <div class="w-16 h-16 rounded-3xl bg-cyan-400/10 flex items-center justify-center text-cyan-400 text-3xl">
+          <div class="small-icon">
             📊
           </div>
 
           <div>
-            <h3 class="text-3xl font-black text-white">
-              Microsoft Learn
-            </h3>
+            <h4>
+              Power BI
+            </h4>
 
-            <p class="text-slate-400 mt-2">
-              Data Analytics & Power BI Learning Paths
+            <p>
+              Dashboard creation, KPI tracking,
+              and executive visual storytelling.
             </p>
           </div>
 
         </div>
 
-        <!-- SKILLS -->
-        <div class="grid gap-4">
+        <!-- CARD -->
+        <div class="education-small-card green">
 
-          <div class="rounded-2xl bg-slate-900/40 p-5">
-            <h4 class="text-white font-semibold mb-2">
-              Power BI & Visualization
-            </h4>
-
-            <p class="text-slate-400 leading-7">
-              Dashboard creation, report design, KPI tracking,
-              drill-through analysis, and executive visual storytelling.
-            </p>
+          <div class="small-icon">
+            🧠
           </div>
 
-          <div class="rounded-2xl bg-slate-900/40 p-5">
-            <h4 class="text-white font-semibold mb-2">
+          <div>
+            <h4>
               Data Modeling & DAX
             </h4>
 
-            <p class="text-slate-400 leading-7">
+            <p>
               Building semantic models, relationships,
-              DAX calculations, measures, and optimized reporting structures.
+              and analytical calculations.
             </p>
           </div>
 
-          <div class="rounded-2xl bg-slate-900/40 p-5">
-            <h4 class="text-white font-semibold mb-2">
+        </div>
+
+        <!-- CARD -->
+        <div class="education-small-card purple">
+
+          <div class="small-icon">
+            🗄️
+          </div>
+
+          <div>
+            <h4>
               SQL & Data Preparation
             </h4>
 
-            <p class="text-slate-400 leading-7">
-              Querying, transforming, cleaning, and preparing datasets
-              for analytical and reporting workflows.
+            <p>
+              Querying, cleaning, transforming,
+              and preparing datasets for reporting.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="education-small-card blue">
+
+          <div class="small-icon">
+            📈
+          </div>
+
+          <div>
+            <h4>
+              Business Intelligence
+            </h4>
+
+            <p>
+              Turning structured data into clear insights
+              for smarter business decisions.
             </p>
           </div>
 
@@ -131,3 +139,207 @@
 
   </div>
 </section>
+
+<style>
+  .education-section {
+    position: relative;
+    padding: 120px 24px;
+    overflow: hidden;
+  }
+
+  .education-glow {
+    position: absolute;
+    top: 80px;
+    left: 10%;
+    width: 680px;
+    height: 680px;
+    border-radius: 999px;
+    background:
+      radial-gradient(circle, rgba(168, 85, 247, 0.13), transparent 65%),
+      radial-gradient(circle, rgba(34, 211, 238, 0.08), transparent 70%);
+    filter: blur(42px);
+    pointer-events: none;
+  }
+
+  .education-container {
+    position: relative;
+    z-index: 1;
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+
+  .education-heading {
+    text-align: center;
+    margin-bottom: 70px;
+  }
+
+  .education-heading h2 {
+    margin: 0;
+    color: white;
+    font-size: clamp(3rem, 6vw, 5.8rem);
+    line-height: 1;
+    font-weight: 950;
+    letter-spacing: -0.06em;
+  }
+
+  .education-line {
+    width: 88px;
+    height: 3px;
+    margin: 28px auto;
+    border-radius: 999px;
+    background: linear-gradient(90deg, transparent, #a855f7, transparent);
+    box-shadow: 0 0 30px rgba(168, 85, 247, 0.75);
+  }
+
+  .education-heading h3 {
+    margin: 0;
+    color: white;
+    font-size: clamp(2rem, 4vw, 3.3rem);
+    line-height: 1.12;
+    font-weight: 900;
+    letter-spacing: -0.04em;
+  }
+
+  .education-heading p {
+    max-width: 720px;
+    margin: 26px auto 0;
+    color: #94a3b8;
+    font-size: 17px;
+    line-height: 1.9;
+  }
+
+  .education-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 0.9fr;
+    gap: 34px;
+    align-items: stretch;
+  }
+
+  .education-main-card,
+  .education-small-card {
+    background:
+      linear-gradient(145deg, rgba(15, 23, 42, 0.88), rgba(15, 23, 42, 0.45));
+    border-radius: 32px;
+    box-shadow:
+      0 30px 90px rgba(0, 0, 0, 0.35),
+      inset 0 1px 0 rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(24px);
+  }
+
+  .education-main-card {
+    padding: 44px;
+  }
+
+  .education-icon {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 28px;
+    border-radius: 22px;
+    background: rgba(168, 85, 247, 0.12);
+    font-size: 28px;
+  }
+
+  .education-main-card h4 {
+    margin: 0;
+    color: white;
+    font-size: 34px;
+    font-weight: 900;
+    letter-spacing: -0.04em;
+  }
+
+  .education-main-card span {
+    display: block;
+    margin-top: 14px;
+    color: #a855f7;
+    font-size: 18px;
+    font-weight: 800;
+  }
+
+  .education-main-card p {
+    margin-top: 30px;
+    color: #cbd5e1;
+    font-size: 17px;
+    line-height: 1.9;
+  }
+
+  .education-side-cards {
+    display: grid;
+    gap: 22px;
+  }
+
+  .education-small-card {
+    display: grid;
+    grid-template-columns: 76px 1fr;
+    gap: 22px;
+    align-items: center;
+    padding: 28px 32px;
+    transition: 0.25s ease;
+  }
+
+  .education-small-card:hover {
+    transform: translateY(-6px);
+  }
+
+  .small-icon {
+    width: 66px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    font-size: 28px;
+  }
+
+  .cyan .small-icon {
+    background: rgba(34, 211, 238, 0.12);
+  }
+
+  .green .small-icon {
+    background: rgba(74, 222, 128, 0.12);
+  }
+
+  .purple .small-icon {
+    background: rgba(168, 85, 247, 0.12);
+  }
+
+  .blue .small-icon {
+    background: rgba(59, 130, 246, 0.12);
+  }
+
+  .education-small-card h4 {
+    margin: 0 0 8px;
+    color: white;
+    font-size: 21px;
+    font-weight: 900;
+  }
+
+  .education-small-card p {
+    margin: 0;
+    color: #cbd5e1;
+    line-height: 1.7;
+  }
+
+  @media (max-width: 980px) {
+    .education-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .education-section {
+      padding: 90px 20px;
+    }
+
+    .education-main-card {
+      padding: 30px;
+    }
+
+    .education-small-card {
+      grid-template-columns: 1fr;
+      padding: 28px;
+    }
+  }
+</style>
