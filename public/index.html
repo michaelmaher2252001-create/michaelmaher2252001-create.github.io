@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Michael Maher | Data &amp; Financial Analyst | Power BI Cairo</title>
   <meta name="description" content="Data and Financial Analyst based in Cairo. Power BI, DAX, SQL, and financial analysis. Available for opportunities." />
+
+  <!-- Link preview (LinkedIn, WhatsApp, Twitter) -->
+  <meta property="og:title" content="Michael Maher | Data &amp; Financial Analyst" />
+  <meta property="og:description" content="Power BI dashboards and financial analysis, backed by an accounting and tax background. Cairo, Egypt." />
+  <meta property="og:url" content="https://michaelmaher2252001-create.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://michaelmaher2252001-create.github.io/projects/sales.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
@@ -17,8 +26,14 @@
     }
     a { color: #60a5fa; text-decoration: none; transition: all 0.2s; }
     a:hover { color: #93c5fd; }
+    a:focus-visible { outline: 2px solid #60a5fa; outline-offset: 3px; border-radius: 4px; }
     ul { list-style: none; }
     img { max-width: 100%; height: auto; display: block; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      * { transition: none !important; }
+    }
 
     /* NAVIGATION */
     nav {
@@ -37,7 +52,7 @@
     }
     .nav-logo { color: #fff; font-weight: 700; font-size: 15px; letter-spacing: -0.3px; }
     .nav-logo span { color: #60a5fa; }
-    .nav-links { display: flex; gap: 28px; }
+    .nav-links { display: flex; gap: 24px; }
     .nav-links a { color: #94a3b8; font-size: 14px; font-weight: 500; }
     .nav-links a:hover { color: #fff; }
     .nav-social { display: flex; gap: 10px; }
@@ -48,7 +63,7 @@
       font-size: 14px; color: #cbd5e1;
     }
     .nav-social a:hover { border-color: #60a5fa; color: #60a5fa; }
-    @media (max-width: 768px) { .nav-links { display: none; } }
+    @media (max-width: 900px) { .nav-links { display: none; } }
 
     /* LAYOUT */
     .container { max-width: 1100px; margin: auto; padding: 0 24px; }
@@ -106,8 +121,11 @@
       background: #1d4ed8; border-color: #1d4ed8; color: #fff; transform: translateY(-2px);
     }
     @media (max-width: 768px) {
+      .hero { padding: 80px 0 60px; }
       .hero h1 { font-size: 40px; }
       .hero-subtitle { font-size: 22px; }
+      h2 { font-size: 28px; }
+      section { padding: 60px 0; }
     }
 
     /* ABOUT CARDS */
@@ -136,15 +154,16 @@
     }
     .skill-card-header {
       display: flex; justify-content: space-between;
-      align-items: baseline; margin-bottom: 8px;
+      align-items: baseline; margin-bottom: 8px; gap: 8px;
     }
     .skill-name { font-weight: 600; color: #fff; font-size: 15px; }
     .skill-level {
       font-size: 12px; color: #60a5fa; font-weight: 500;
-      text-transform: uppercase; letter-spacing: 0.5px;
+      text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap;
     }
     .skill-detail { font-size: 13px; color: #94a3b8; line-height: 1.5; }
-    @media (max-width: 768px) { .skills-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 900px) { .skills-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 640px) { .skills-grid { grid-template-columns: 1fr; } }
 
     /* PROJECTS */
     .project-card {
@@ -165,12 +184,15 @@
     }
     .project-card h3 { font-size: 24px; margin-bottom: 12px; color: #fff; }
     .project-card .desc { color: #94a3b8; margin-bottom: 20px; }
-    .tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 28px; }
+    .tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
     .tag {
       background: rgba(96, 165, 250, 0.1); color: #93c5fd;
       padding: 5px 12px; border-radius: 999px;
       font-size: 12px; font-weight: 500;
       border: 1px solid rgba(96, 165, 250, 0.2);
+    }
+    .data-source {
+      font-size: 13px; color: #64748b; margin-bottom: 8px;
     }
     .insight-grid {
       display: grid; grid-template-columns: 1fr 1fr; gap: 28px;
@@ -185,7 +207,7 @@
       padding-left: 20px; position: relative; margin-bottom: 8px;
       color: #cbd5e1; font-size: 14px;
     }
-    .insight-grid li::before { content: '→'; position: absolute; left: 0; color: #60a5fa; }
+    .insight-grid li::before { content: '\2192'; position: absolute; left: 0; color: #60a5fa; }
     .view-project-btn {
       display: inline-flex; align-items: center; gap: 8px;
       padding: 10px 18px; border: 1px solid #60a5fa; border-radius: 8px;
@@ -195,6 +217,7 @@
     @media (max-width: 768px) {
       .insight-grid { grid-template-columns: 1fr; gap: 20px; }
       .project-image { height: 200px; }
+      .project-content { padding: 24px; }
     }
 
     /* EXPERIENCE */
@@ -220,7 +243,10 @@
     .detail-pill .icon { font-size: 22px; margin-bottom: 6px; }
     .detail-pill h5 { color: #fff; font-size: 13px; margin: 0 0 4px; }
     .detail-pill p { color: #94a3b8; font-size: 12px; margin: 0; }
-    @media (max-width: 768px) { .detail-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 768px) {
+      .detail-grid { grid-template-columns: repeat(2, 1fr); }
+      .exp-card { padding: 24px; }
+    }
 
     /* CTA */
     .cta-section {
@@ -231,6 +257,7 @@
     .cta-section h2 { margin-bottom: 16px; }
     .cta-section p { max-width: 600px; margin: 0 auto 32px; color: #94a3b8; }
     .cta-section .button-row { justify-content: center; }
+    @media (max-width: 768px) { .cta-section { padding: 40px 24px; } }
 
     /* FOOTER */
     footer {
@@ -244,18 +271,19 @@
   <!-- NAVIGATION -->
   <nav>
     <div class="nav-inner">
-      <a href="#" class="nav-logo">Michael Maher <span>·</span> <span style="color:#94a3b8; font-weight:500;">Data &amp; Financial Analyst</span></a>
+      <a href="#" class="nav-logo">Michael Maher <span>&middot;</span> <span style="color:#94a3b8; font-weight:500;">Data &amp; Financial Analyst</span></a>
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
         <a href="#contact">Contact</a>
       </div>
       <div class="nav-social">
-        <a href="https://github.com/michaelmaher2252001-create" target="_blank" rel="noopener" title="GitHub">⌬</a>
-        <a href="https://www.linkedin.com/in/michael-maher-3104ab216" target="_blank" rel="noopener" title="LinkedIn">in</a>
-        <a href="mailto:michael.maher225200@gmail.com" title="Email">✉</a>
+        <a href="https://github.com/michaelmaher2252001-create" target="_blank" rel="noopener" title="GitHub">&#9132;</a>
+        <a href="https://www.linkedin.com/in/michaelmaher-analyst" target="_blank" rel="noopener" title="LinkedIn">in</a>
+        <a href="mailto:michael.maher225200@gmail.com" title="Email">&#9993;</a>
       </div>
     </div>
   </nav>
@@ -263,19 +291,19 @@
   <!-- HERO -->
   <header class="hero">
     <div class="container hero-content">
-      <span class="hero-badge">📍 Cairo, Egypt · Open to Opportunities</span>
+      <span class="hero-badge">&#128205; Cairo, Egypt &middot; Open to Opportunities</span>
       <h1>Hello, I'm Michael Maher.</h1>
       <p class="hero-subtitle">I turn financial and business data into <strong>clear, actionable insights.</strong></p>
       <p class="hero-description">
         I build Power BI dashboards, financial reports, and analytical views that help
-        businesses understand performance, monitor risk, and make smarter decisions —
+        businesses understand performance, monitor risk, and make smarter decisions &mdash;
         backed by an accounting foundation and current experience at Grant Thornton.
       </p>
       <div class="button-row">
-        <a class="btn btn-primary" href="mailto:michael.maher225200@gmail.com">✉ Email Me</a>
-        <a class="btn" href="https://wa.me/201013559339" target="_blank" rel="noopener">💬 WhatsApp</a>
-        <a class="btn" href="https://www.linkedin.com/in/michael-maher-3104ab216" target="_blank" rel="noopener">🔗 LinkedIn</a>
-        <a class="btn" href="https://github.com/michaelmaher2252001-create" target="_blank" rel="noopener">⌬ GitHub</a>
+        <a class="btn btn-primary" href="mailto:michael.maher225200@gmail.com">&#9993; Email Me</a>
+        <a class="btn" href="https://wa.me/201013559339" target="_blank" rel="noopener">&#128172; WhatsApp</a>
+        <a class="btn" href="https://www.linkedin.com/in/michaelmaher-analyst" target="_blank" rel="noopener">&#128279; LinkedIn</a>
+        <a class="btn" href="https://github.com/michaelmaher2252001-create" target="_blank" rel="noopener">&#9132; GitHub</a>
       </div>
     </div>
   </header>
@@ -291,22 +319,22 @@
       </p>
       <div class="about-grid">
         <div class="icon-card">
-          <div class="icon">👤</div>
+          <div class="icon">&#128100;</div>
           <h4>Who I Am</h4>
-          <p>Data &amp; Financial Analyst based in Cairo with a background in accounting, taxation, financial reporting, and business analytics — bridging the finance and analytics worlds.</p>
+          <p>Data &amp; Financial Analyst based in Cairo with a background in accounting, taxation, financial reporting, and business analytics &mdash; bridging the finance and analytics worlds.</p>
         </div>
         <div class="icon-card">
-          <div class="icon">📊</div>
+          <div class="icon">&#128202;</div>
           <h4>Data Analytics</h4>
           <p>Power BI dashboards, DAX measures, KPI reporting, SQL analysis, and Excel-based financial modeling for executive and operational reporting.</p>
         </div>
         <div class="icon-card">
-          <div class="icon">💰</div>
+          <div class="icon">&#128176;</div>
           <h4>Financial Analysis</h4>
           <p>Financial reporting, profitability review, tax exposure, variance analysis, and business performance evaluation across multiple domains.</p>
         </div>
         <div class="icon-card">
-          <div class="icon">🚀</div>
+          <div class="icon">&#128640;</div>
           <h4>Business Impact</h4>
           <p>Turning analytical findings into clear recommendations that support real decisions and measurable improvements in business performance.</p>
         </div>
@@ -340,7 +368,7 @@
             <span class="skill-name">SQL</span>
             <span class="skill-level">Intermediate</span>
           </div>
-          <p class="skill-detail">SELECT, JOINs, GROUP BY, CTEs, subqueries — actively deepening with window functions</p>
+          <p class="skill-detail">SELECT, JOINs, GROUP BY, CTEs, subqueries &mdash; actively deepening with window functions</p>
         </div>
         <div class="skill-card">
           <div class="skill-card-header">
@@ -378,13 +406,13 @@
       </p>
 
       <article class="project-card">
-        <img class="project-image" src="projects/fraud-analysis.png" alt="Fraud Detection Dashboard" onerror="this.style.display='none'" />
+        <img class="project-image" src="projects/fraud-analysis.png" alt="Fraud detection and risk monitoring dashboard built in Power BI" onerror="this.style.display='none'" />
         <div class="project-content">
           <div class="project-label">Risk Analytics Dashboard</div>
           <h3>Fraud Detection &amp; Risk Monitoring</h3>
           <p class="desc">
             An interactive Power BI dashboard designed to monitor fraudulent transactions
-            across payment channels, regions, and time periods — surfacing the patterns
+            across payment channels, regions, and time periods &mdash; surfacing the patterns
             risk teams need to act on.
           </p>
           <div class="tags">
@@ -393,6 +421,7 @@
             <span class="tag">Data Modeling</span>
             <span class="tag">Risk Analytics</span>
           </div>
+          <p class="data-source">Data source: [add dataset name and link]</p>
           <div class="insight-grid">
             <div>
               <h4>Key Insights</h4>
@@ -411,18 +440,18 @@
               </ul>
             </div>
           </div>
-          <a class="view-project-btn" href="projects/fraud-detection.html">View Full Case Study →</a>
+          <a class="view-project-btn" href="projects/fraud-detection.html">View Full Case Study &rarr;</a>
         </div>
       </article>
 
       <article class="project-card">
-        <img class="project-image" src="projects/financial-performance.png" alt="Financial Performance Dashboard" onerror="this.style.display='none'" />
+        <img class="project-image" src="projects/financial-performance.png" alt="Financial performance and variance analysis dashboard built in Power BI" onerror="this.style.display='none'" />
         <div class="project-content">
           <div class="project-label">Financial Analysis</div>
           <h3>Financial Performance &amp; Variance Analysis</h3>
           <p class="desc">
             A financial analysis project comparing actual performance against targets to
-            uncover revenue, cost, and profitability variances — enabling sharper management
+            uncover revenue, cost, and profitability variances &mdash; enabling sharper management
             conversations.
           </p>
           <div class="tags">
@@ -431,6 +460,7 @@
             <span class="tag">Financial Reporting</span>
             <span class="tag">DAX</span>
           </div>
+          <p class="data-source">Data source: [add dataset name and link]</p>
           <div class="insight-grid">
             <div>
               <h4>Key Insights</h4>
@@ -449,18 +479,18 @@
               </ul>
             </div>
           </div>
-          <a class="view-project-btn" href="projects/financial-performance.html">View Full Case Study →</a>
+          <a class="view-project-btn" href="projects/financial-performance.html">View Full Case Study &rarr;</a>
         </div>
       </article>
 
       <article class="project-card">
-        <img class="project-image" src="projects/sales.png" alt="Sales Performance Dashboard" onerror="this.style.display='none'" />
+        <img class="project-image" src="projects/sales.png" alt="Sales performance and profitability dashboard built in Power BI" onerror="this.style.display='none'" />
         <div class="project-content">
           <div class="project-label">Sales Analytics Dashboard</div>
           <h3>Sales Performance &amp; Profitability Analysis</h3>
           <p class="desc">
             A Power BI dashboard analyzing sales trends, cost structure, and profit margins
-            across regions, products, and time periods — focused on where the business
+            across regions, products, and time periods &mdash; focused on where the business
             actually makes money.
           </p>
           <div class="tags">
@@ -469,6 +499,7 @@
             <span class="tag">KPI Reporting</span>
             <span class="tag">Time Intelligence</span>
           </div>
+          <p class="data-source">Data source: [add dataset name and link]</p>
           <div class="insight-grid">
             <div>
               <h4>Key Insights</h4>
@@ -487,7 +518,7 @@
               </ul>
             </div>
           </div>
-          <a class="view-project-btn" href="projects/sales-analysis.html">View Full Case Study →</a>
+          <a class="view-project-btn" href="projects/sales-analysis.html">View Full Case Study &rarr;</a>
         </div>
       </article>
     </div>
@@ -507,9 +538,9 @@
         <div class="exp-card-header">
           <div>
             <h3>Business Tax Analyst</h3>
-            <div class="company">Grant Thornton — Saleh, Barsoum &amp; Abdelaziz (GT-SBA)</div>
+            <div class="company">Grant Thornton &mdash; Saleh, Barsoum &amp; Abdelaziz (GT-SBA)</div>
           </div>
-          <div class="period">Nov 2024 — Present · Cairo</div>
+          <div class="period">Nov 2024 &mdash; Present &middot; Cairo</div>
         </div>
         <p style="color:#94a3b8; margin-bottom: 16px;">
           Supporting corporate tax compliance, transfer pricing documentation, payroll and
@@ -518,22 +549,22 @@
         </p>
         <div class="detail-grid">
           <div class="detail-pill">
-            <div class="icon">📑</div>
+            <div class="icon">&#128209;</div>
             <h5>Tax Compliance</h5>
             <p>Preparing and reviewing Corporate Income Tax Returns</p>
           </div>
           <div class="detail-pill">
-            <div class="icon">📊</div>
+            <div class="icon">&#128202;</div>
             <h5>Transfer Pricing</h5>
             <p>Benchmarking, documentation, and advisory support</p>
           </div>
           <div class="detail-pill">
-            <div class="icon">💼</div>
+            <div class="icon">&#128188;</div>
             <h5>Payroll Reporting</h5>
             <p>Compiling and verifying payroll and withholding tax</p>
           </div>
           <div class="detail-pill">
-            <div class="icon">🤝</div>
+            <div class="icon">&#129309;</div>
             <h5>Client Collaboration</h5>
             <p>Working with senior advisors on corporate clients</p>
           </div>
@@ -558,33 +589,33 @@
         <div class="exp-card-header">
           <div>
             <h3>Helwan University</h3>
-            <div class="company">Bachelor of Accounting — Faculty of Commerce (English Section)</div>
+            <div class="company">Bachelor of Commerce, Accounting and Finance &mdash; Faculty of Commerce (English Section)</div>
           </div>
-          <div class="period">2019 — 2023</div>
+          <div class="period">2019 &mdash; 2023</div>
         </div>
         <p style="color:#94a3b8; margin-bottom: 16px;">
           Graduated with a foundation in accounting, finance, business administration,
-          financial reporting, and business decision-making — the domain knowledge I now
+          financial reporting, and business decision-making &mdash; the domain knowledge I now
           bring to data analytics work.
         </p>
         <div class="detail-grid">
           <div class="detail-pill">
-            <div class="icon">📑</div>
+            <div class="icon">&#128209;</div>
             <h5>Accounting</h5>
             <p>Financial accounting, cost accounting, and audit principles</p>
           </div>
           <div class="detail-pill">
-            <div class="icon">💰</div>
+            <div class="icon">&#128176;</div>
             <h5>Finance</h5>
             <p>Corporate finance, financial analysis, valuation</p>
           </div>
           <div class="detail-pill">
-            <div class="icon">📊</div>
+            <div class="icon">&#128202;</div>
             <h5>Financial Reporting</h5>
             <p>Statements, ratio analysis, and reporting standards</p>
           </div>
           <div class="detail-pill">
-            <div class="icon">🏢</div>
+            <div class="icon">&#127970;</div>
             <h5>Business Administration</h5>
             <p>Management, operations, and business decision-making</p>
           </div>
@@ -595,34 +626,34 @@
       <div class="exp-card">
         <div class="exp-card-header">
           <div>
-            <h3>Microsoft Learn — Data Analytics &amp; Power BI</h3>
-            <div class="company">Self-directed learning · Hands-on projects</div>
+            <h3>Microsoft Learn &mdash; Data Analytics &amp; Power BI</h3>
+            <div class="company">Self-directed learning &middot; Hands-on projects</div>
           </div>
-          <div class="period">2024 — Present</div>
+          <div class="period">2024 &mdash; Present</div>
         </div>
         <p style="color:#94a3b8; margin-bottom: 16px;">
           Built data analytics skills through Microsoft Learn's PL-300 learning path,
-          official documentation, and hands-on project work — applying the concepts to
+          official documentation, and hands-on project work &mdash; applying the concepts to
           the dashboards in my portfolio.
         </p>
         <div class="detail-grid">
           <div class="detail-pill">
-            <div class="icon">📊</div>
+            <div class="icon">&#128202;</div>
             <h5>Power BI</h5>
             <p>Dashboards, KPI tracking, executive storytelling</p>
           </div>
           <div class="detail-pill">
-            <div class="icon">🧠</div>
+            <div class="icon">&#129504;</div>
             <h5>Data Modeling &amp; DAX</h5>
             <p>Semantic models, relationships, calculations</p>
           </div>
           <div class="detail-pill">
-            <div class="icon">🗄️</div>
+            <div class="icon">&#128451;</div>
             <h5>SQL &amp; Data Prep</h5>
             <p>Querying, cleaning, transforming datasets</p>
           </div>
           <div class="detail-pill">
-            <div class="icon">📈</div>
+            <div class="icon">&#128200;</div>
             <h5>Business Intelligence</h5>
             <p>Insights for smarter business decisions</p>
           </div>
@@ -642,17 +673,17 @@
           and business reporting opportunities in Cairo or remote.
         </p>
         <div class="button-row">
-          <a class="btn btn-primary" href="mailto:michael.maher225200@gmail.com">✉ Email Me</a>
-          <a class="btn" href="https://wa.me/201013559339" target="_blank" rel="noopener">💬 WhatsApp</a>
-          <a class="btn" href="https://www.linkedin.com/in/michael-maher-3104ab216" target="_blank" rel="noopener">🔗 LinkedIn</a>
-          <a class="btn" href="https://github.com/michaelmaher2252001-create" target="_blank" rel="noopener">⌬ GitHub</a>
+          <a class="btn btn-primary" href="mailto:michael.maher225200@gmail.com">&#9993; Email Me</a>
+          <a class="btn" href="https://wa.me/201013559339" target="_blank" rel="noopener">&#128172; WhatsApp</a>
+          <a class="btn" href="https://www.linkedin.com/in/michaelmaher-analyst" target="_blank" rel="noopener">&#128279; LinkedIn</a>
+          <a class="btn" href="https://github.com/michaelmaher2252001-create" target="_blank" rel="noopener">&#9132; GitHub</a>
         </div>
       </div>
     </div>
   </section>
 
   <footer>
-    © 2026 Michael Maher · Built with care in Cairo
+    &copy; 2026 Michael Maher &middot; Built with care in Cairo
   </footer>
 
 </body>
