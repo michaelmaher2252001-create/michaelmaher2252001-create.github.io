@@ -4,12 +4,12 @@ const siteConfig = {
   location: "Cairo, Egypt",
 
   email: "michael.maher225200@gmail.com",
-  linkedin: "https://www.linkedin.com/in/michael-maher-3104ab216",
+  linkedin: "https://www.linkedin.com/in/michaelmaher-analyst",
   github: "https://github.com/michaelmaher2252001-create",
 
   socials: {
     email: "michael.maher225200@gmail.com",
-    linkedin: "https://www.linkedin.com/in/michael-maher-3104ab216",
+    linkedin: "https://www.linkedin.com/in/michaelmaher-analyst",
     github: "https://github.com/michaelmaher2252001-create",
   },
 
