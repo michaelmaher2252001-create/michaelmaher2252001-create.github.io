@@ -37,7 +37,7 @@ const siteConfig = {
       description:
         "An interactive Power BI dashboard designed to monitor fraudulent transactions across payment channels, regions, and time periods.",
       image: "/projects/fraud-analysis.png",
-      href: "#",
+      href: "/projects/fraud-analysis.png",
       tags: ["Power BI", "Data Modeling", "Risk Analysis"],
       insights: [
         "Detected unusual transaction behavior across specific regions.",
@@ -54,9 +54,9 @@ const siteConfig = {
       category: "Financial Analysis",
       title: "Financial Performance & Variance Analysis",
       description:
-        "A financial analysis project comparing actual performance against targets to uncover revenue, cost, and profitability variances.",
+        "A financial analysis project comparing actual performance against targets to uncover revenue, cost, and profitability variances. Built on Microsoft's Financial Sample dataset.",
       image: "/projects/financial-performance.png",
-      href: "#",
+      href: "/projects/financial-performance.pbix",
       tags: ["Power BI", "Variance Analysis", "Financial Reporting"],
       insights: [
         "Identified unfavorable gaps between actual and target performance.",
@@ -75,7 +75,7 @@ const siteConfig = {
       description:
         "A Power BI dashboard analyzing sales trends, cost structure, and profit margins across regions, products, and time periods.",
       image: "/projects/sales.png",
-      href: "#",
+      href: "/projects/sales.png",
       tags: ["Power BI", "Profitability Analysis", "KPI Reporting"],
       insights: [
         "Top-performing regions contributed the majority of total sales.",
