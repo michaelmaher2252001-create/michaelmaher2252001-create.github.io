@@ -37,7 +37,7 @@ const siteConfig = {
       description:
         "An end-to-end analysis of what EGX-listed companies actually pay in corporate tax against Egypt's 22.5% statutory rate. Built from audited financial statements for 10 companies across 6 sectors, FY2021–2024, through Excel, SQL Server, and Power BI.",
       image: "/projects/egx-tax-rates.png",
-      href: "/projects/egx-effective-tax-rates.pbix",
+      href: "/projects/egx-effective-tax-rates.pdf",
       tags: ["Power BI", "SQL Server", "Star Schema", "DAX"],
       insights: [
         "Weighted-average effective tax rate of 20.24%, below the 22.5% statutory rate.",
@@ -75,7 +75,7 @@ const siteConfig = {
       description:
         "A financial analysis project comparing actual performance against targets to uncover revenue, cost, and profitability variances. Built on Microsoft's Financial Sample dataset.",
       image: "/projects/financial-performance.png",
-      href: "/projects/financial-performance.pbix",
+      href: "/projects/financial-performance.pdf",
       tags: ["Power BI", "Variance Analysis", "Financial Reporting"],
       insights: [
         "Identified unfavorable gaps between actual and target performance.",
@@ -92,14 +92,14 @@ const siteConfig = {
       category: "Sales Analytics Dashboard",
       title: "Sales Performance & Profitability Analysis",
       description:
-        "A Power BI dashboard analyzing sales trends, cost structure, and profit margins across regions, products, and time periods.",
+        "A Power BI dashboard analyzing sales trends, cost structure, and profit margins across regions, products, and segments, covering September 2013 to December 2014.",
       image: "/projects/sales.png",
-      href: "/projects/sales.png",
+      href: "/projects/sales.pdf",
       tags: ["Power BI", "Profitability Analysis", "KPI Reporting"],
       insights: [
-        "Top-performing regions contributed the majority of total sales.",
-        "COGS growth reduced profitability in selected markets.",
-        "Clear seasonal sales patterns appeared across the year.",
+        "1.13M units sold generating 118.73M in sales, at a 14.23% profit margin.",
+        "Government was the largest segment at 41.8% of units sold.",
+        "France, Germany and Canada led on profit; the United States and Mexico trailed.",
       ],
       impact: [
         "Highlighted margin pressure areas for management review.",
