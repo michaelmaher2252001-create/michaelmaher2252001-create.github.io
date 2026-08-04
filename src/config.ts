@@ -32,6 +32,25 @@ const siteConfig = {
 
   projects: [
     {
+      category: "Tax & Financial Analytics",
+      title: "Effective Tax Rates on the Egyptian Exchange",
+      description:
+        "An end-to-end analysis of what EGX-listed companies actually pay in corporate tax against Egypt's 22.5% statutory rate. Built from audited financial statements for 10 companies across 6 sectors, FY2021–2024, through Excel, SQL Server, and Power BI.",
+      image: "/projects/egx-tax-rates.png",
+      href: "/projects/egx-effective-tax-rates.pbix",
+      tags: ["Power BI", "SQL Server", "Star Schema", "DAX"],
+      insights: [
+        "Weighted-average effective tax rate of 20.24%, below the 22.5% statutory rate.",
+        "Sample-wide rate declined from 23.8% in 2021 to 18.3% in 2024, tracking Egypt's currency devaluations.",
+        "Rates ranged from 11.3% to 25.8%; only Food & Beverage and Real Estate exceeded statutory as sectors.",
+      ],
+      impact: [
+        "Showed that headline effective rates are not comparable without adjusting for reporting basis and income mix.",
+        "Isolated associate income and fair-value gains as the main distortions in reported tax rates.",
+        "Provided a reusable dimensional model for sector and company-level tax benchmarking.",
+      ],
+    },
+    {
       category: "Risk Analytics Dashboard",
       title: "Fraud Detection & Risk Monitoring",
       description:
