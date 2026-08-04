@@ -40,7 +40,7 @@ const siteConfig = {
       href: "/projects/egx-effective-tax-rates.pdf",
       tags: ["Power BI", "SQL Server", "Star Schema", "DAX"],
       insights: [
-        "Weighted-average effective tax rate of 20.24%, below the 22.5% statutory rate.",
+        "Weighted-average effective tax rate of 20.4%, below the 22.5% statutory rate.",
         "Sample-wide rate declined from 23.8% in 2021 to 18.3% in 2024, tracking Egypt's currency devaluations.",
         "Rates ranged from 11.3% to 25.8%; only Food & Beverage and Real Estate exceeded statutory as sectors.",
       ],
@@ -97,7 +97,7 @@ const siteConfig = {
       href: "/projects/sales.pdf",
       tags: ["Power BI", "Profitability Analysis", "KPI Reporting"],
       insights: [
-        "1.13M units sold generating 118.73M in sales, at a 14.23% profit margin.",
+        "1.13M units sold generating EGP 118.73M in sales, at a 14.23% profit margin.",
         "Government was the largest segment at 41.8% of units sold.",
         "France, Germany and Canada led on profit; the United States and Mexico trailed.",
       ],
