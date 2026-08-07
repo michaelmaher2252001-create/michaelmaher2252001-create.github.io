@@ -3,12 +3,12 @@ const siteConfig = {
   role: "Data Analyst | Financial Analyst",
   location: "Cairo, Egypt",
 
-  email: "michael.maher225200@gmail.com",
+  email: "michael.maher2252001@gmail.com",
   linkedin: "https://www.linkedin.com/in/michaelmaher-analyst",
   github: "https://github.com/michaelmaher2252001-create",
 
   socials: {
-    email: "michael.maher225200@gmail.com",
+    email: "michael.maher2252001@gmail.com",
     linkedin: "https://www.linkedin.com/in/michaelmaher-analyst",
     github: "https://github.com/michaelmaher2252001-create",
   },
