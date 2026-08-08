@@ -70,25 +70,25 @@ const siteConfig = {
       ],
     },
     {
-      category: "Financial Analysis",
-      title: "Financial Performance & Variance Analysis",
-      description:
-        "A financial analysis project comparing actual performance against targets to uncover revenue, cost, and profitability variances. Built on Microsoft's Financial Sample dataset.",
-      image: "/projects/financial-performance.png",
-      href: "/projects/financial-performance.pdf",
-      tags: ["Power BI", "Variance Analysis", "Financial Reporting"],
-      insights: [
-        "Identified unfavorable gaps between actual and target performance.",
-        "Highlighted cost drivers affecting profitability.",
-        "Detected underperforming segments that required management attention.",
-      ],
-      impact: [
-        "Supported financial planning and performance review discussions.",
-        "Improved understanding of key variance drivers.",
-        "Enabled more informed financial decision-making.",
-      ],
-    },
-    {
+      {
+  category: "Pricing & Margin Analysis",
+  title: "Discount Impact & Margin Analysis",
+  description:
+    "An analysis of what discounting actually costs, across 1.13M units, 5 countries and 6 products. Built in Power BI on Microsoft's Financial Sample dataset (USD).",
+  image: "/projects/financial-performance.png",
+  href: "/projects/financial-performance.pdf",
+  tags: ["Power BI", "DAX", "Margin Analysis", "Pricing"],
+  insights: [
+    "Discounting cost 7.20% of list revenue — $127.93M gross sales converted to $118.73M net.",
+    "Profit margin fell from 21.86% on undiscounted sales to 9.07% at the highest discount band.",
+    "Heavily discounted sales took 35% of volume but returned only 20% of profit; lightly discounted sales took 23% of volume and returned 37%.",
+  ],
+  impact: [
+    "Identified the point at which discounting stops paying: profit per unit peaks in the low band at 2.8x the high band, and exceeds undiscounted sales.",
+    "Quantified where discounting runs deepest — the US at 8.21% against Germany at 5.68%, and Velo at 7.95% against VTT at 6.63%.",
+    "Noted that part of the margin decline is definitional rather than behavioural, so the volume and profit-per-unit views carry the argument.",
+  ],
+},
       category: "Sales Analytics Dashboard",
       title: "Sales Performance & Profitability Analysis",
       description:
