@@ -89,7 +89,7 @@ const siteConfig = {
       ],
     },
     {
-      category: "Sales Analytics Dashboard",
+      category: "Sales & Profitability Analysis",
       title: "Sales Performance & Profitability Analysis",
       description:
         "A Power BI dashboard analyzing sales trends, cost structure, and profit margins across regions, products, and segments, covering September 2013 to December 2014.",
@@ -97,7 +97,7 @@ const siteConfig = {
       href: "/projects/sales.pdf",
       tags: ["Power BI", "Profitability Analysis", "KPI Reporting"],
       insights: [
-        "1.13M units sold generating EGP 118.73M in sales, at a 14.23% profit margin.",
+        "1.13M units sold generating $118.73M in sales, at a 14.23% profit margin.",
         "Government was the largest segment at 41.8% of units sold.",
         "France, Germany and Canada led on profit; the United States and Mexico trailed.",
       ],
